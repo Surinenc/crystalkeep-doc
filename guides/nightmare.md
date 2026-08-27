@@ -81,9 +81,27 @@ tactical problem, not a performance one.
 
 ## Nightmare Laws
 
-Above the early bands, ranked Laws apply cumulatively and cycle every ten
-levels. They are previewed rather than hidden: you see the roster and the
-events before you commit to the climb.
+Five Laws apply cumulatively, in a fixed order: **Shieldwall**, **Ember**,
+**Giants**, **Siege**, **Attrition**.
+
+One further Law activates every **10** Nightmare levels, so the first arrives
+at 10 and all five are running by **50**. After that the cycle repeats and each
+pass raises a Law's rank instead of adding a new one — so any given Law
+strengthens every **50** levels.
+
+| Nightmare | Active Laws |
+|---:|---|
+| 0–9 | none |
+| 10 | Shieldwall |
+| 30 | Shieldwall, Ember, Giants |
+| 50 | all five, rank 1 |
+| 60 | all five — Shieldwall now rank 2 |
+| 110 | all five — Shieldwall rank 3, the rest rank 2 |
+
+Each Law names its own pressure and its own answer. Shieldwall puts
+Shieldbearers at the front of more packets and tells you to flank, use crush,
+or break the formation. They are previewed rather than hidden: you see the
+roster and the events before you commit to the climb.
 
 ## Rewards
 

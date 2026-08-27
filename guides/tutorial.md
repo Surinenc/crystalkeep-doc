@@ -21,8 +21,12 @@ its location first, aim its rotation second. The range and dead-zone preview
 rotate before mana is committed. Then sell the practice Blockade and read the
 refund — **60% of total mana invested**.
 
-**4 — Start the wave.** You start every normal wave. Unspent setup time is
-yours to use or waste.
+**4 — Hold and maintain.** Start the training wave yourself when the lane is
+ready — you start every normal wave, and unspent setup time is yours to use or
+waste. Then hold the lane while it runs: defenses take damage, and after the
+wave you inspect what the Ballista actually contributed before spending more
+mana. This lesson also poses the run's recurring question — add another Tier 1
+for coverage, or upgrade this one for concentration.
 
 **5 — Change the keep.** Approach a Counterweight Bridge, read its banner
 before touching it, then raise it. The route changes. Open the map, find the

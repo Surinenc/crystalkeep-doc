@@ -20,10 +20,14 @@ ground the generator handed you.
 | Wave | Composition | The question |
 |---|---|---|
 | 1 | Goblins | Can you hold a lane at all? |
-| 2 | Goblins and runners | Can you catch something fast? |
-| 3 | Orcs, goblins, crossbowmen | Do you have crush, and can you break line of sight? |
-| 4 | Shieldbearers, sappers, bombardiers | Can you flank, intercept, and protect what you built? |
-| 5 | The full roster plus a Colossus | All of it, at once |
+| 2 | Goblins, runners | Can you catch something fast? |
+| 3 | Goblins, runners, orcs, crossbowmen | Do you have crush, and can you break line of sight? |
+| 4 | Goblins, orcs, shieldbearers, sappers, crossbowmen, bombardiers | Can you flank, intercept, and protect what you built? |
+| 5 | All ten roles, including a Colossus | All of it, at once |
+
+Wave 3 is where crush becomes mandatory — it is the first wave with orcs, who
+take 0.55× from both slash and pierce. Wave 4 adds the two specialists that
+punish a static plan: sappers go for your defenses, bombardiers hit for 30.
 
 ## Wave events announce their own counter
 

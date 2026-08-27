@@ -108,11 +108,16 @@ Ward's cap keeps it from becoming an economy.
 | Left mouse | Sword / lock placement / confirm facing |
 | E / F / C | Hex / Mend / Fireball |
 | 1–0, or B / middle mouse | Select a defense, or open the build wheel |
-| R / Q | Adjust facing / back out or cancel |
+| R / Q, or right mouse | Adjust facing / back out or cancel |
 | X | Sell the defense under the crosshair |
+| **T** | **Interact with a landmark, or inspect an item drop** |
 | G | Start the next wave |
 | I / K / M | Ledger / Workshop / game modes |
 | Tab | Tactical map |
+| **N** | **New generated keep** (before wave 1) |
+| **Enter** | **Restart after victory or defeat** |
+| F4 | Recall the last wave debrief |
+| **[ ]** | **Loot filter** |
 | Esc | Pause |
 
 ## See also

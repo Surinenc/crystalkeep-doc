@@ -71,12 +71,17 @@ keep in four has one.
 |---|---|
 | Collapsing Aqueduct | Collapses on a scheduled wave — routes change |
 | Sealed Breach Gate | Opens on a scheduled wave — a new route appears |
-| Counterweight Bridge | You raise or lower it between waves |
-| Siege Lift | You operate it for vertical movement |
+| Counterweight Bridge | You raise or lower it between waves — press **T** |
+| Siege Lift | You operate it for vertical movement — press **T** |
 
 Scheduled changes announce themselves before the wave that triggers them —
 `COLLAPSING AQUEDUCT COLLAPSES · ROUTES CHANGE`. The wave it fires on is
 derived from the seed, so it is not always the same wave.
+
+Interactive landmarks are operated with **T**, and only between waves — they
+spend a charge each time, so a bridge with two charges can be moved twice in a
+run. Read the banner before you touch one: it names the verb, the current
+state, the charges left, and when the change takes effect.
 
 A topology change is a **redeployment problem**. The defenses you placed for
 the old route are now covering ground the enemy no longer walks.
