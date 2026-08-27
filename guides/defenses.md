@@ -9,6 +9,28 @@ Defenses are **permanent**. They do not expire, they have no cooldown, and they
 do not occupy an ability slot. What you build stays built until it is destroyed
 or you sell it.
 
+## You do not start with all ten
+
+Defenses unlock with progress, and the ladder is short:
+
+| Progress | Available |
+|---|---|
+| Initiation not finished | **Blockade, Ballista** — the two the tutorial teaches |
+| Initiation complete | **+ Cannon, Frost Rune, Wall Maul** (5) |
+| 1 Keep Assault cleared | **+ Spikes, Tar, Wall Blades** (8) |
+| 2 Keep Assault clears | **+ Springboard, Harpoon** (all 10) |
+
+Two things worth knowing about that table.
+
+**Skipping the Initiation unlocks everything immediately.** A skipped tutorial
+is treated as "you already know this" and hands you all ten at once, while
+finishing it hands you five. If you skip, you get the whole toolbox and none of
+the teaching.
+
+**Only Keep Assault clears count.** Weekly runs are normalized and do not
+record a clear, and Endless has no clear to record — so the last five defenses
+come from winning the campaign twice, and nothing else advances them.
+
 ## The three schools
 
 | | | | | |

@@ -4,12 +4,21 @@ A normal run plays a **generated keep** — a fortress built from a seed by the
 constraint solver and proved fair before you ever see it. The ground is the
 first thing you should read.
 
-**They are solved ahead of time, not while you wait.** The build ships with a
-set of keeps the generator has already solved and validated, and a run picks one
-at random. Solving live takes seconds and cannot be threaded in the web export,
-which would put that wait in front of every launch. `--seed N` still solves one
-live if you want a specific keep, and every shipped keep records the seed it
-came from, so any of them can be regenerated exactly.
+**Where that keep comes from depends on the mode.**
+
+| Mode | Keep source |
+|---|---|
+| Keep Assault | One of a set the generator solved ahead of time, drawn at random |
+| Endless Siege | The same set, drawn at random |
+| **Weekly Keep** | **Generated live from the week's own seed** |
+
+Assault and Endless play pre-solved ground because solving live takes seconds
+and cannot be threaded in the web export — that wait would sit in front of every
+launch. The Weekly pays it once, for one keep, and in exchange it reaches the
+**generator's full range** rather than a fixed shortlist.
+
+`--seed N` also solves live, and every pre-solved keep records the seed it came
+from, so any of them can be regenerated exactly.
 
 ## What a keep is made of
 
@@ -23,10 +32,11 @@ the grid width sets the size of the keep:
 | 8 × 8 | 144 m |
 | 9 × 9 | 162 m |
 
-Width is chosen per seed, and the shipped set leans small: it is mostly **8 × 8**
-with a handful of 7 × 7. A 9 × 9 is possible from the generator but does not
-appear in the current build, so in practice you are reading a 126 m or 144 m
-board. Doors follow the shape rather than a fixed number:
+Width is chosen per seed. The pre-solved set Assault and Endless draw from is
+mostly **8 × 8** with a handful of 7 × 7 — no 9 × 9 is among them, so in those
+modes you are reading a 126 m or 144 m board. The **Weekly can roll any of the
+three**, because it generates fresh. Doors follow the shape rather than a fixed
+number:
 **2, 3 or 4** gates, selected from the finished topology by which ones open
 ground the others do not. A keep whose second gate would walk the same corridor
 as the first simply does not get one.
@@ -40,6 +50,35 @@ packets per gate in sequence, while a four-door keep sends all four at once,
 one per gate. The same enemies arrive either way. What changes is whether you
 get a second beat to react in. Read a four-door keep as *less time*, not *more
 enemies*. See [Waves](waves.md#waves-arrive-as-squads-not-as-a-crowd).
+
+## The six archetypes
+
+Every generated keep belongs to an **archetype**, named on the level line
+alongside its own title — *Foundry Channels · Ashen Run*, *Ringwall · Golden
+Ward*. The archetype is the useful half: it tells you the shape of the tactical
+problem before you have walked it, and it decides which landmarks the keep can
+carry.
+
+| Archetype | The problem it sets | Landmarks it can draw |
+|---|---|---|
+| **Foundry Channels** | Parallel channels split and reconverge — cover moving fronts, not one splash choke | Oil Channel, Foundry Crucible Pool, Wind Vent, Powder Magazine |
+| **Broken Causeway** | Exposed spans can change route — keep alternate coverage ready between waves | Counterweight Bridge, Collapsing Aqueduct, Chain Anchor, Sealed Breach Gate |
+| **Split Bastion** | Two defensible halves share short rotations — spend mana where pressure commits | Iron Portcullis, Watch Gallery, Stoneward Shrine, Sealed Breach Gate |
+| **Sunken Court** | A low basin and an upper rim compete for control — preserve a safe vertical rotation | Floodgate Cistern, Rime Basin, Execution Pit, Collapsing Aqueduct |
+| **High Gallery** | Overlooks grant range but hide the lower approaches — defend both elevation bands | Siege Lift, Fallen Bell Tower, Watch Gallery, Signal Brazier |
+| **Ringwall** | Several spokes feed one oath court — rotate and overlap rather than overcommit | Oath Plaza, War Horn Rostrum, Rune Pylon, Iron Portcullis |
+
+**Only three archetypes can change their own routes mid-run.** Broken Causeway
+is built for it — three of its four landmarks are route-changers — while Sunken
+Court and Split Bastion carry one each. On **Foundry Channels, High Gallery and
+Ringwall the routes you read in the first build phase are the routes for the
+whole siege**, so a placement there is a commitment you will not be asked to
+revisit.
+
+That is the single most useful thing the archetype name tells you. Read
+*Broken Causeway* and hold mana back; read *Ringwall* and spend it.
+
+All six appear in the pre-solved set, four keeps each.
 
 ## The fairness contract
 
@@ -60,9 +99,10 @@ generator's.
 | F7 | Blockading every lane costs **at most 540 mana** |
 | F8 | The crystal keeps **3.5 m** of clear ground |
 
-F7 is the one worth internalising. It is why a keep never has five doors: at 60
-mana per blockade the burden of sealing every lane has to stay recoverable, and
-a fifth front breaks that.
+F7 is the one worth internalising: sealing every lane is always affordable, so
+turtling stays a real option rather than a fantasy. (The four-door ceiling is a
+separate, deliberate cap in the generator — `DOORS_MAX := 4` — not something F7
+produces on its own.)
 
 A keep that fails any rule is discarded and another seed is tried. You never
 see the rejects.
@@ -71,6 +111,8 @@ see the rejects.
 
 Before the first wave, spend the build phase looking:
 
+- **The level line** names the archetype. That is your first read, and it is
+  free — it tells you whether the routes can change on you.
 - **Route ribbons** on the ground show each gate's path to the crystal.
 - The **tactical map** (Tab) shows the whole keep at once, including which
   gates attack next.
@@ -141,81 +183,31 @@ cheapest wall instead.
 Sealing every lane is legal. It is also expensive, and F7 exists precisely to
 keep that option affordable rather than mandatory.
 
-## The authored keeps
+## Development fixtures
 
-Six hand-authored keeps sit alongside the generator — but **none of them is
-normal-play content.** A regular run always calls for a generated keep; the
-authored ones are fixtures, kept because the test bot needs ground that holds
-still and reproducing a bug needs a map that is the same tomorrow.
+Seven hand-authored keeps exist in the build, and **none of them is normal-play
+content.** They are fixtures: the test bot needs ground that holds still, and
+reproducing a bug needs a map that is the same tomorrow. A regular run always
+loads a generated keep.
 
-They are reachable only with `--keep <name>` on the command line, or from the
-dev console. No menu offers them, and restarting or switching modes carries
-your **current** keep forward rather than selecting a different one:
+They are reachable only with `--keep <name>` or from the dev console. No menu
+offers them, and restarting or switching modes carries your **current** keep
+forward rather than selecting a different one.
 
-| Keep | Archetype id | Notes |
-|---|---|---|
-| fortress | `fortress` | The gate's default fixture |
-| plaza | `plaza` | Open lanes, compensated per contract C3 |
-| sprawl | `sprawl` | |
-| caldera | `hazard` | |
-| bastion | `verticality` | |
-| **twin_keep** | `twin_keep_12x12` | **144 m, and two crystals** |
+`fortress` (the test default), `plaza`, `sprawl`, `caldera`, `bastion`,
+`twin_keep`, and `initiation` — which backs the Initiation tutorial and is the
+only one of the seven a player meets, through the Tutorial entry.
 
-A seventh, `initiation`, backs the tutorial.
+Two details matter if you ever load one. Their archetype ids do not always match
+their file names — bastion is `verticality`, caldera is `hazard` — which is
+visible because Endless records are filed by archetype. And they carry no
+sanctuary data, so the crystal's no-build zone does not apply on them.
 
-The archetype id is not always the file name — bastion is `verticality` and
-caldera is `hazard`. That matters because Endless records are filed by
-archetype.
-
-These keeps carry no sanctuary data, so the crystal no-build zone does not
-apply on them.
-
-### Twin Keep has two crystals
-
-> **You will not meet Twin Keep in a normal run.** It is an authored fixture,
-> reachable only with `--keep twin_keep`. Generated keeps — which is what every
-> regular run plays — always defend a single crystal at the centre. What
-> follows describes the fixture.
-
-Every other keep in the game defends one crystal. Twin Keep defends two —
-**West** at one end and **East** at the other, 30 m apart on a 144 m board.
-
-**Losing either one ends the run.** The game does not check whether the other
-still stands — the first crystal to fall ends it. There is no fallback
-objective and no partial credit.
-
-One purse, two objectives, and the same wave budget.
-
-**Each wave event commits to one crystal.** Events do not switch target
-mid-packet and the choice is never hidden — a packet announced against the West
-crystal goes to the West crystal. And the enemies come from the **two gates
-nearest that objective**, not from wherever the round-robin lands, so an event
-aimed West uses the western corridors.
-
-**The schedule teaches one district before asking you to rotate:**
-
-| Wave | Events target |
-|---|---|
-| 1 | West, West |
-| 2 | East, East |
-| 3 | West, East |
-| 4 | East, West, East |
-| 5 | West, East, West, East |
-
-The first two waves let you learn each side on its own. From wave 3 the events
-alternate, and Twin Keep becomes a **rotation problem** — you are not defending
-two lanes so much as deciding what can hold without you while you are at the
-other end of a 144 m keep.
-
-That is why splitting your purse evenly is rarely right and committing entirely
-to one side is never right. What you need is one side that survives unattended
-and the mobility to be at the other.
-
-The generator never produces two crystals — `structural_synthesis.gd` emits no
-`crystals` block at all, so every generated keep falls back to a single
-objective at the centre. Twin crystals are an authored-fixture feature, and
-since normal play only ever loads generated keeps, **the two-crystal defense is
-not part of the shipped run.**
+**`twin_keep` is the only keep in the game with two crystals**, West and East,
+30 m apart, either one of which ends the run when it falls. The generator emits
+no `crystals` block at all, so every keep you can actually reach in normal play
+defends a single crystal at the centre. The two-crystal siege is not part of the
+shipped run.
 
 ## Seeds
 

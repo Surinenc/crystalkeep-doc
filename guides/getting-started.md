@@ -23,8 +23,8 @@ timer — 5 seconds during combat, 1.5 outside it. Spend yourself on the lane
 that matters.
 
 Every keep you will actually play defends **one** crystal, with 300 health.
-(An authored fixture, Twin Keep, defends two and is reachable only from the
-command line — see [Keeps](keeps.md#twin-keep-has-two-crystals).)
+(A [development fixture](keeps.md#development-fixtures) defends two, but no
+normal run loads it.)
 
 **Some matchups deal exactly zero.** A Ballista deals nothing through a
 Shieldbearer's front. A Cannon deals nothing to a Fire Demon. When you see
@@ -45,6 +45,10 @@ orc, 420 for a Colossus — and each cleared wave pays a bonus. Selling a defens
 returns **60%** of everything invested in it.
 
 ## Your first build
+
+You will not have all ten defenses at first — the Initiation leaves you with
+five, and the last five arrive after your first and second Keep Assault wins.
+See [Defenses](defenses.md#you-do-not-start-with-all-ten).
 
 A reasonable opening on any keep:
 

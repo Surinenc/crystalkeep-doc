@@ -70,6 +70,9 @@ pass through the same logarithmic curve. A point is therefore worth far more in
 a rating you have neglected than in one your equipment has already pushed high —
 the curve makes specialisation self-limiting and breadth quietly efficient.
 
+Allocation and respec are **build-phase only**, and both are disabled entirely
+during a Weekly run.
+
 You can undo an allocation at the Workshop. **Respec costs `25 × points spent`
 gold, minimum 100**, and it refunds everything at once. Correcting course early
 is cheap; reversing a hundred levels of commitment is not.

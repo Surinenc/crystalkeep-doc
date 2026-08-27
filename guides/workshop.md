@@ -3,6 +3,13 @@
 The Workshop (**K**) is where items are improved rather than found. It runs on
 **gold** and on materials recovered from things you no longer want.
 
+**It is build-phase only.** Crafting, equipping, allocating rating points and
+respeccing all require the build phase — once a wave is running, your loadout is
+what you committed to. And **none of it is available during a Weekly Keep run**,
+because Weekly normalizes your power and will not let you change it mid-week.
+
+Plan your gear between waves, not during them.
+
 ## Materials
 
 Salvaging yields reagents, each with its own role:
