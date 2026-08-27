@@ -25,6 +25,7 @@ Ward pool. The keep does the killing. You decide where it kills hardest.
 - [Enemies](guides/enemies.md) — all ten roles, what each one fears and refuses
 - [Defenses](guides/defenses.md) — ten defenses across three schools, with costs and mounting rules
 - [Waves](guides/waves.md) — the five waves and the counters they announce
+- [Siege Doctrines](guides/doctrines.md) — the two run-long choices offered after waves 2 and 4
 
 ## The keep
 

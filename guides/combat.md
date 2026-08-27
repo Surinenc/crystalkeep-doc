@@ -44,7 +44,7 @@ reason a build of one defense loses.
 |---|---|
 | Cannon into a **Fire Demon** | 0 — fire immunity |
 | Pierce into a **Shieldbearer's front** | 0 — the shield blocks it |
-| Pierce into any **covered** target | 0 |
+| Pierce into a squadmate **covered** by a Shieldbearer | 0 |
 | Chill on a **Frostbound** | 0 control |
 | Stagger on an **orc** | 0 control |
 | Displace on a **Colossus** | 0 control |
@@ -56,6 +56,55 @@ that during a wave, the answer is not more of the same defense.
 **Frontal pierce is about facing, not position.** A Ballista behind a
 Shieldbearer works perfectly well. The shield only covers the front. Flank it,
 or use a channel the shield does not stop.
+
+### The shield in full
+
+Only the Shieldbearer has a facing rule, and it is a **120° frontal cone**
+measured from where it is looking — not a 180° wall. A hit from the side is
+already a flank.
+
+| Channel, into the front | Multiplier |
+|---|---:|
+| Pierce | **×0.00** |
+| Slash | ×0.40 |
+| Crush | ×0.75 |
+| **Fire** | **×1.00** |
+
+**Fire ignores the shield completely.** It is the one channel that does not
+care which way a Shieldbearer is facing, which makes Fireball and burning the
+positional-free answer to a shield wall.
+
+Everything outside the cone takes **×1.25 on every channel** — flanking is not
+merely "the shield stops working", it is a 25% damage bonus on top. A flanked
+Shieldbearer takes full pierce and a quarter more of it, and the first flank
+also pays **+2 Ward**.
+
+That cone is why the Shieldbearer is a *positioning* puzzle rather than a
+*channel* puzzle. You can beat it with fire without moving, or with anything at
+all by getting behind it.
+
+## Squad auras — the part that punishes a single answer
+
+Three enemies extend their own resistance to everything travelling with them,
+within their squad. This is why a lane built around one channel fails against a
+mixed packet rather than merely underperforming.
+
+| Aura | Range | Effect on squadmates |
+|---|---:|---|
+| **Shieldbearer** | 6 m ahead, 3.25 m wide | Pierce into anyone it covers deals **zero** |
+| **Fire Demon** | 4 m | Fire damage to squadmates is cut to **20%** |
+| **Frostbound** | 4 m | Squadmates **cannot be chilled at all** |
+
+So a Shieldbearer at the head of a column is not one hard target — it is a
+moving pierce immunity for everything behind it, and your Ballista line stops
+working until the column is flanked or broken.
+
+A Fire Demon does not merely resist your Fireball; it protects the goblins
+walking beside it. A Frostbound shuts off your Frost Rune for the whole packet,
+not just for itself.
+
+The auras are squad-scoped: an enemy from a different packet standing nearby
+gets nothing.
 
 ## The enemy roster
 

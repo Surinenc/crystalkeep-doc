@@ -62,12 +62,35 @@ The Wall Maul is the heaviest single hit available and it staggers — which is
 why it is one of the few good answers to a Shieldbearer column, and why it does
 nothing useful against a runner it cannot catch.
 
+## What towers shoot at
+
+A targeted defense picks the **nearest** enemy inside its envelope — within
+range, outside minimum range, and inside its firing arc.
+
+The one exception is the Warden's mark. If an enemy in the envelope carries a
+**Hex** mark, the tower takes that one instead, nearest-first among marked
+targets. That is the whole mechanism behind Hex as a command: you are not
+buffing the tower, you are choosing its target.
+
 ## Traps wear out
 
 Every trap trigger costs the trap durability — 2.0 per trigger for Spikes,
-Springboard and Wall Blades, 2.5 for the Harpoon, 3.0 for the Wall Maul. A trap
-in a heavily-trafficked lane degrades faster than one covering a quiet
-approach. Repair is cheaper than replacement.
+Springboard and Wall Blades, 2.5 for the Harpoon, 3.0 for the Wall Maul. Tar
+and Frost Runes drain continuously while something stands in them rather than
+per trigger.
+
+**Tier 3 halves wear.** A fully upgraded trap degrades at half rate, which is a
+second reason to concentrate rather than spread in a heavily-trafficked lane.
+
+## Repair is free
+
+Repairing a damaged defense costs **nothing** in a normal run. There is no
+reason to leave a damaged tower standing, and no reason to sell and rebuild one
+that is merely hurt.
+
+The exception is the **Iron Levy** siege contract in Endless, which charges
+50% of the defense's base build cost per repair. That contract is the only
+time the sell-and-rebuild calculation is worth making.
 
 ## Placement rules
 
@@ -105,8 +128,49 @@ derived from the build cost rather than fixed:
 
 So a Ballista at 100 costs 100 to reach T2 and 200 more to reach T3 — 400 mana
 in total for one fully upgraded tower, against 400 for four T1 Ballistas
-covering four times the ground. That trade is the build phase's central
-question and the game deliberately offers no advisor for it.
+covering four times the ground.
+
+### What a tier actually buys
+
+Upgrading is not a flat power bump. Towers scale on four axes at once:
+
+| | T1 | T2 | T3 |
+|---|---:|---:|---:|
+| Damage | ×1.00 | ×1.55 | ×2.35 |
+| Fire rate | ×1.00 | ×1.25 | ×1.55 |
+| Range | ×1.00 | ×1.08 | ×1.18 |
+| Health | ×1.00 | ×1.55 | ×2.50 |
+
+Damage and rate compound, so **sustained output is ×1.94 at T2 and ×3.64 at
+T3**. Traps take a single effect multiplier instead — **×1.55 at T2, ×2.25 at
+T3** — applied to their control strength.
+
+Now the central trade can be answered honestly. Four T1 Ballistas out-damage
+one T3 Ballista on raw throughput (×4.00 against ×3.64) for the same 400 mana.
+Concentration is not buying you damage. It is buying **18% more range, two and
+a half times the health, one target it cannot lose**, and the masterwork
+mechanic below.
+
+Spread wins when you have ground to cover and lanes to answer. Concentration
+wins when there is one choke everything must walk and you need it to hold
+without you.
+
+### Masterwork mechanics
+
+Tier 3 is called **Masterwork**, and it is where a defense stops being a bigger
+version of itself and gains a new behaviour:
+
+| Defense | At T2 | At Masterwork (T3) |
+|---|---|---|
+| **Ballista** | Bolts pierce through one enemy | Flank hits **fork** to a second target for 45% damage |
+| **Cannon** | Shells stagger for 0.16 s | Stagger 0.24 s, plus a **concussive outer ring** |
+| **Springboard** | Adds 0.12 s stagger | 0.20 s stagger on top of the launch |
+| **Frost Rune** | — | Crushing a **Brittle** enemy releases a shatter pulse |
+| **Tar** | — | Fire on an **oiled** enemy spreads the coating |
+
+This is the real argument for a third tier, and it is why the answer changes by
+defense. A Masterwork Frost Rune gains a mechanic that did not exist before; a
+Masterwork Blockade is just a tougher wall.
 
 Selling returns **60%** of everything invested — including upgrades.
 
@@ -128,3 +192,4 @@ upgrades nothing. Use the wheel.
 - [Combat](combat.md) — channels, immunities, and what each enemy refuses
 - [Economy](economy.md) — mana income, bounties, and refunds
 - [Keeps](keeps.md) — the ground you are building on
+- [Siege Doctrines](doctrines.md) — free Masterwork mechanics, twice a run

@@ -92,6 +92,55 @@ to prepare for and too large to solve by position alone.
 
 The 420 bounty is real: killing it funds the rest of the wave.
 
+## How hard each one hits your buildings
+
+Damage to defenses is a separate role from damage to the crystal, and the
+spread is wide. A runner chips; a Sapper dismantles.
+
+| Enemy | Structure damage | Reads as |
+|---|---:|---|
+| Sapper | **×3.00** | The dedicated demolition counter |
+| Colossus | ×2.25 | Breaks what it walks through |
+| Orc | ×1.50 | A breaker |
+| Bombardier | ×1.20 | |
+| Shieldbearer | ×0.75 | |
+| Crossbowman | ×0.65 | |
+| Frostbound / Fire Demon | ×0.55 | |
+| Goblin | ×0.35 | Chips only |
+| Runner | ×0.25 | Barely scratches |
+
+Any class can divert to an exposed defense, but only Sappers, orcs and the
+Colossus meaningfully destroy one. If a Ballista is dying, look for those three
+before blaming the swarm.
+
+## How far each one looks
+
+Perception is the radius within which an enemy notices an exposed defense;
+detour is how far it will leave its route to reach one. Both vary by class, and
+the gap between them is the class's patience.
+
+| Enemy | Perception | Detour |
+|---|---:|---:|
+| Sapper | 14 m | 14 m |
+| Bombardier | 13 m | 9 m |
+| Crossbowman | 11 m | 6 m |
+| Colossus | 16 m | 12 m |
+| Orc | 10 m | 9 m |
+| Shieldbearer | 8 m | 6 m |
+| Frostbound / Fire Demon | 7 m | 4 m |
+| Goblin | 5 m | 5 m |
+| Runner | 3.5 m | **1.5 m** |
+
+The Sapper is the only class that will detour as far as it can see — it hunts.
+The runner effectively does not: it notices almost nothing and leaves its lane
+by a metre and a half, so runners go for the crystal and ignore your towers.
+
+## How many can attack at once
+
+Defenses and the Warden can only be engaged by so many at a time. Runners,
+Frostbound, Fire Demons, crossbowmen and bombardiers commit **one** attacker;
+orcs, shieldbearers, sappers and the Colossus commit **two**.
+
 ## Quick answers
 
 | If you see | Bring |

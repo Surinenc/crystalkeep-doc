@@ -93,3 +93,4 @@ just the same.
 - [Combat](combat.md) — the channel and immunity rules behind every counter
 - [Keeps](keeps.md) — the routes the wave will walk
 - [Economy](economy.md) — bounties, wave bonuses, and what to do with them
+- [Siege Doctrines](doctrines.md) — the choice offered after waves 2 and 4
