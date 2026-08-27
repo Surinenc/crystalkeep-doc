@@ -98,9 +98,10 @@ build wheel while aiming at one and choose the sell segment.
 Aim at a placed defense and open the build wheel. It becomes a three-option
 context menu — **upgrade**, **sell**, or select that defense type for building.
 
-The nameplate on a defense you are aiming at prompts an upgrade cost. Note that
-the prompt names a key which is bound to a spell; the wheel is the reliable
-route. <!-- TODO: verify — ck_world.gd nameplate prompt vs InputMap binding -->
+**The wheel is the only way to upgrade.** Aiming at a defense shows a nameplate
+prompting `E  UPGRADE` with a cost, but **E** casts Hex of Frailty; there is no
+upgrade binding in the control map at all. Pressing it spends 35 Ward and
+upgrades nothing. Use the wheel.
 
 ## See also
 
