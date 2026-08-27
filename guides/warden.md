@@ -1,6 +1,6 @@
 # The Warden
 
-<img src="../assets/warden/warden.png" alt="The Warden" width="170" align="right">
+<p align="center"><img src="../assets/warden/warden.png" alt="The Warden" width="200"></p>
 
 You are not a camera above the battlefield. You are a body in it, with a sword,
 three spells, and a limited pool of Ward to spend on them.
@@ -50,11 +50,16 @@ the right one against goblins (1.25×) and crossbowmen (1.25×).
 
 ## The three spells
 
+| | | |
+|:--:|:--:|:--:|
+| <img src="../assets/spells/hex-medallion-v1.png" width="90" alt="Hex of Frailty"> | <img src="../assets/spells/mend-medallion-v1.png" width="90" alt="Mending Ward"> | <img src="../assets/spells/fireball-medallion-v1.png" width="90" alt="Fireball"> |
+| **Hex of Frailty**<br>E · 35 Ward | **Mending Ward**<br>F · 30 Ward | **Fireball**<br>C · 45 Ward |
+
 All three are **position-cast**: you aim at a point, there is a windup, and the
 effect lands there. Casting roots you for the windup, so cast placement is a
 commitment.
 
-### <img src="../assets/spells/hex-medallion-v1.png" width="30" alt=""> Hex of Frailty — 35 Ward, 0.5 s windup, 14 m
+### Hex of Frailty — 35 Ward, 0.5 s windup, 14 m
 
 Curses a zone. Everything inside takes **30% more damage from any source** —
 your sword, your traps, and every tower firing into it. It also marks a
@@ -63,13 +68,13 @@ priority enemy, and towers retarget onto the mark.
 This is your strongest spell and it deals no damage at all. Hex is how you tell
 a lane full of defenses where to concentrate.
 
-### <img src="../assets/spells/mend-medallion-v1.png" width="30" alt=""> Mending Ward — 30 Ward, 0.4 s windup, 14 m
+### Mending Ward — 30 Ward, 0.4 s windup, 14 m
 
 Heals the nearest defense **120 HP over 8 seconds** and grants it **−25% damage
 taken** while active. Saving a defense that was about to die pays **+3 Ward**,
 which is most of the cast back.
 
-### <img src="../assets/spells/fireball-medallion-v1.png" width="30" alt=""> Fireball — 45 Ward, 0.8 s windup, 20 m
+### Fireball — 45 Ward, 0.8 s windup, 20 m
 
 Impact damage plus a burning effect, in the **fire** channel. Note the two
 enemies that care most: a Frostbound takes **1.50×** from fire, and a Fire

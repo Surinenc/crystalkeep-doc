@@ -9,21 +9,16 @@ damage do.
 
 ## The roster
 
-<p align="center">
-<img src="../assets/enemies/goblin.png" width="88" alt="Goblin">
-<img src="../assets/enemies/runner.png" width="88" alt="Runner">
-<img src="../assets/enemies/orc.png" width="88" alt="Orc">
-<img src="../assets/enemies/shieldbearer.png" width="88" alt="Shieldbearer">
-<img src="../assets/enemies/sapper.png" width="88" alt="Sapper">
-<img src="../assets/enemies/frostbound.png" width="88" alt="Frostbound">
-<img src="../assets/enemies/crossbowman.png" width="88" alt="Crossbowman">
-<img src="../assets/enemies/bombardier.png" width="88" alt="Bombardier">
-<img src="../assets/enemies/colossus.png" width="88" alt="Colossus">
-</p>
+| | | | | |
+|:--:|:--:|:--:|:--:|:--:|
+| <img src="../assets/enemies/goblin.png" width="110" alt="Goblin"> | <img src="../assets/enemies/runner.png" width="110" alt="Runner"> | <img src="../assets/enemies/orc.png" width="110" alt="Orc"> | <img src="../assets/enemies/shieldbearer.png" width="110" alt="Shieldbearer"> | <img src="../assets/enemies/sapper.png" width="110" alt="Sapper"> |
+| **Goblin** | **Runner** | **Orc** | **Shieldbearer** | **Sapper** |
+| <img src="../assets/enemies/frostbound.png" width="110" alt="Frostbound"> | <img src="../assets/enemies/frostbound.png" width="110" alt="Fire Demon"> | <img src="../assets/enemies/crossbowman.png" width="110" alt="Crossbowman"> | <img src="../assets/enemies/bombardier.png" width="110" alt="Bombardier"> | <img src="../assets/enemies/colossus.png" width="110" alt="Colossus"> |
+| **Frostbound** | **Fire Demon** | **Crossbowman** | **Bombardier** | **Colossus** |
+
+The Fire Demon shares the Frostbound's model — see below.
 
 ### Runner — 35 HP, 5.6 m/s, 6 damage, 12 mana
-
-<img src="../assets/enemies/runner.png" alt="Runner" width="150" align="right">
 
 The fastest thing in the game. Fragile, and takes **1.25× from pierce** but
 only 0.90× from slash. Highly susceptible to control: 1.50× displacement, 1.25×
@@ -32,15 +27,11 @@ does.
 
 ### Goblin — 60 HP, 3.4 m/s, 8 damage, 14 mana
 
-<img src="../assets/enemies/goblin.png" alt="Goblin" width="150" align="right">
-
 The baseline. Takes **1.25× from slash** and 1.10× from fire. No resistances
 worth planning around. Wave 1 is goblins so you can learn the controls against
 something forgiving.
 
 ### Crossbowman — 55 HP, 3.2 m/s, 12 damage, 20 mana
-
-<img src="../assets/enemies/crossbowman.png" alt="Crossbowman" width="150" align="right">
 
 Attacks at range and needs line of sight. Takes **1.25× from slash**, resists
 pierce (0.90×). Break the sightline or close the distance — a wall between it
@@ -48,14 +39,10 @@ and its target is worth more than another tower.
 
 ### Frostbound — 65 HP, 4.8 m/s, 8 damage, 20 mana
 
-<img src="../assets/enemies/frostbound.png" alt="Frostbound" width="150" align="right">
-
 Fast, and **immune to chill** — a Frost Rune does nothing to it. Takes
 **1.50× from fire**. Fireball and Tar are the answers; the Frost Rune is not.
 
 ### Fire Demon — 72 HP, 4.5 m/s, 9 damage, 22 mana
-
-<img src="../assets/enemies/frostbound.png" alt="Fire Demon (shares the Frostbound model)" width="150" align="right">
 
 The mirror of the Frostbound: **immune to fire**, and takes **1.50× control
 from chill**. A Cannon deals it exactly zero. Chill it, then kill it with the
@@ -69,15 +56,11 @@ Warden, a Ballista, or a Wall Maul.
 
 ### Sapper — 80 HP, 3.8 m/s, 10 damage, 25 mana
 
-<img src="../assets/enemies/sapper.png" alt="Sapper" width="150" align="right">
-
 **Targets your defenses, not the crystal.** Fast and fragile; takes 1.35× from
 pierce and 1.20× from slash, resists crush (0.80×). Left alone it will
 dismantle the lane you paid for. Intercept it.
 
 ### Shieldbearer — 150 HP, 2.8 m/s, 12 damage, 28 mana
-
-<img src="../assets/enemies/shieldbearer.png" alt="Shieldbearer" width="150" align="right">
 
 **Frontal pierce deals zero.** Not reduced — zero, at any tower level. Takes
 1.15× from crush, and resists displacement (0.65×) and stagger (0.60×). Flank
@@ -85,15 +68,11 @@ it, or use crush.
 
 ### Bombardier — 210 HP, 2.0 m/s, 30 damage, 45 mana
 
-<img src="../assets/enemies/bombardier.png" alt="Bombardier" width="150" align="right">
-
 Slow, heavy, and hits hardest of the regular roster. Takes **1.35× from
 pierce**, resists slash (0.70×) and is nearly immovable (0.20× displacement).
 Can be interrupted — worth **+5 Ward**.
 
 ### Orc — 280 HP, 2.2 m/s, 22 damage, 45 mana
-
-<img src="../assets/enemies/orc.png" alt="Orc" width="150" align="right">
 
 The wall. Takes **1.40× from crush** and 1.15× from fire, but only 0.55× from
 slash *and* pierce — so both the sword and the Ballista are working at barely
@@ -102,8 +81,6 @@ half rate. **Immune to stagger**, and 0.15× displacement.
 Orcs are why a keep needs a Cannon.
 
 ### Colossus — 1700 HP, 1.45 m/s, 72 damage, 420 mana
-
-<img src="../assets/enemies/colossus.png" alt="Colossus" width="150" align="right">
 
 Arrives on wave 5. **Immune to displacement**, heavily resistant to chill
 (0.45×), tar (0.35×) and stagger (0.30×). Takes 1.35× from crush. Slow enough

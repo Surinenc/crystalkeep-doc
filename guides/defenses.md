@@ -11,18 +11,12 @@ or you sell it.
 
 ## The three schools
 
-<p align="center">
-<img src="../assets/defenses/blockade-v1.png" width="70" alt="Blockade">
-<img src="../assets/defenses/slow-v1.png" width="70" alt="Frost Rune">
-<img src="../assets/defenses/ballista-v1.png" width="70" alt="Ballista">
-<img src="../assets/defenses/cannon-v1.png" width="70" alt="Cannon">
-<img src="../assets/defenses/tar-v1.png" width="70" alt="Tar">
-<img src="../assets/defenses/spikes-v1.png" width="70" alt="Spikes">
-<img src="../assets/defenses/spring-v1.png" width="70" alt="Springboard">
-<img src="../assets/defenses/wall_blades-v1.png" width="70" alt="Wall Blades">
-<img src="../assets/defenses/harpoon-v1.png" width="70" alt="Harpoon">
-<img src="../assets/defenses/wall_maul-v1.png" width="70" alt="Wall Maul">
-</p>
+| | | | | |
+|:--:|:--:|:--:|:--:|:--:|
+| <img src="../assets/defenses/blockade-v1.png" width="82" alt=""> | <img src="../assets/defenses/slow-v1.png" width="82" alt=""> | <img src="../assets/defenses/ballista-v1.png" width="82" alt=""> | <img src="../assets/defenses/cannon-v1.png" width="82" alt=""> | <img src="../assets/defenses/tar-v1.png" width="82" alt=""> |
+| Blockade | Frost Rune | Ballista | Cannon | Tar |
+| <img src="../assets/defenses/spikes-v1.png" width="82" alt=""> | <img src="../assets/defenses/spring-v1.png" width="82" alt=""> | <img src="../assets/defenses/wall_blades-v1.png" width="82" alt=""> | <img src="../assets/defenses/harpoon-v1.png" width="82" alt=""> | <img src="../assets/defenses/wall_maul-v1.png" width="82" alt=""> |
+| Spikes | Springboard | Wall Blades | Harpoon | Wall Maul |
 
 **Fortifications** mount on the floor and hold ground.
 **Floor traps** mount on the floor and trigger on contact or proximity.
