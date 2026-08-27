@@ -24,6 +24,13 @@ as the first simply does not get one.
 The crystal sits at the centre, and its surrounding sanctuary is protected
 ground you cannot build on.
 
+**Door count is a timing statement, not a volume one.** A wave is always four
+packets, dealt round-robin across the gates — so a two-door keep sends two
+packets per gate in sequence, while a four-door keep sends all four at once,
+one per gate. The same enemies arrive either way. What changes is whether you
+get a second beat to react in. Read a four-door keep as *less time*, not *more
+enemies*. See [Waves](waves.md#waves-arrive-as-squads-not-as-a-crowd).
+
 ## The fairness contract
 
 Every generated keep is validated against a named contract before it is

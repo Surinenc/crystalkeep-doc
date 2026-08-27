@@ -29,6 +29,48 @@ Wave 3 is where crush becomes mandatory — it is the first wave with orcs, who
 take 0.55× from both slash and pierce. Wave 4 adds the two specialists that
 punish a static plan: sappers go for your defenses, bombardiers hit for 30.
 
+## Waves arrive as squads, not as a crowd
+
+A wave is **four packets**, and a packet is a squad with an authored
+composition — wave 1 is four pairs of goblins, wave 4 leads with
+shieldbearer/goblin/orc/sapper columns.
+
+The squad is the unit that matters, because **squad auras only cover
+squadmates**. A Shieldbearer protects the enemies it arrived with, not whatever
+happens to be standing nearby.
+
+**Packets are dealt round-robin across the keep's gates**, and the count does
+not change with the number of gates. This is worth understanding properly:
+
+| Gates | How the four packets arrive |
+|---:|---|
+| 2 | Two per gate, in sequence — a second wave-front behind the first |
+| 4 | One per gate, **all starting at the same moment** |
+
+So a four-door keep does not send more enemies. It sends the **same** enemies,
+across more fronts, with **less time between the first contact and the last**.
+A two-door keep gives you a second beat to react in; a four-door keep spends
+that time up front and asks whether every lane can hold unattended.
+
+Within a packet, members spawn **0.2 s apart**. Packets sharing a gate are at
+least **2.2 s apart**.
+
+### Shield columns march together; everything else strings out
+
+**A packet containing a Shieldbearer moves at a shared 2.8 m/s** — the
+Shieldbearer's own speed. The whole column is speed-locked to its leader, which
+is exactly why the pierce-immunity aura is so punishing: the squad stays inside
+the shield's cover for the entire approach instead of outrunning it.
+
+**Every other packet keeps individual speeds.** Runners leak ahead of their
+own squad on purpose, arriving alone and early while the goblins behind them
+are still walking. That leak is deliberate design, not a spacing accident — it
+is what stops a single well-placed answer from catching an entire packet.
+
+The practical rule: if the packet has a shield, you are fighting a formation and
+should break it. If it does not, you are fighting a queue and should meet the
+front of it.
+
 ## Wave events announce their own counter
 
 Each wave carries named tactical beats, and each one tells you what answers it
