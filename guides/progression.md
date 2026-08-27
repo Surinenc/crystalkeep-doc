@@ -41,6 +41,42 @@ A **thousandfold** increase in rating buys roughly **four times** the power.
 This is deliberate. Numbers that scale without limit are what killed the tower
 game in this genre's ancestors, and the curve is the defence against it.
 
+## Levels and rating points
+
+Kills pay experience as well as bounty. Experience is **not** a per-run
+resource — it persists, and it is the second half of your power alongside gear.
+
+**XP per kill** is `round(sqrt(monster level))`, tripled for a **specialist**
+(Shieldbearer, Sapper, Frostbound, Fire Demon, Crossbowman, Bombardier). So the
+enemies that threaten your keep most are also worth three times the progress,
+and deeper content pays more per kill without paying explosively more.
+
+**Each level grants one rating point.** The cost of the next level is
+`100 + 35 × level^0.68`, which grows sublinearly — level 10 costs about 270 XP,
+level 100 costs about 900. Levelling slows down, but it never stops meaning
+anything.
+
+Points go into eight ratings, and it is a real allocation decision:
+
+| Warden | Defense |
+|---|---|
+| Warden Power | Defense Power |
+| Warden Vitality | Defense Fortitude |
+| Ward Capacity | Defense Rate |
+| Ward Regeneration | Defense Reach |
+
+Allocated points enter **the same rating pool as your gear**, which means they
+pass through the same logarithmic curve. A point is therefore worth far more in
+a rating you have neglected than in one your equipment has already pushed high —
+the curve makes specialisation self-limiting and breadth quietly efficient.
+
+You can undo an allocation at the Workshop. **Respec costs `25 × points spent`
+gold, minimum 100**, and it refunds everything at once. Correcting course early
+is cheap; reversing a hundred levels of commitment is not.
+
+**The Weekly Keep awards no experience at all.** Normalized runs pay no XP and
+no levels, because the mode exists to compare play rather than accumulate.
+
 ## Rarity and item level do different jobs
 
 **Rarity** controls how many stats an item carries. Seven tiers: Common,
@@ -76,8 +112,33 @@ claimed and what you left behind, honestly.
 ## Sets and uniques
 
 Six equipment sets — Warden's Oath, Bastion Foundry, Windlass Covenant, Powder
-Court, Underkeep Mechanism, Chainwright Arsenal — grant escalating bonuses as
-you equip more pieces of the same set.
+Court, Underkeep Mechanism, Chainwright Arsenal — grant bonuses at **2, 4, 6
+and 8 equipped pieces**. There are eight slots, so a full set is achievable and
+all four tiers stack when it is.
+
+Warden's Oath, as an example of the shape:
+
+| Pieces | Bonus | Grants |
+|---:|---|---|
+| 2 | OATHBOUND EDGE | Warden Power |
+| 4 | UNBROKEN BEARER | Warden Vitality |
+| 6 | WARDEN'S AEGIS | Ward Capacity and Regeneration |
+| 8 | KEEP'S CHAMPION | Warden Power and Ward Capacity |
+
+### Set bonuses scale with resonance — and resonance is an average
+
+A set bonus is not a fixed number. Each tier grants `coefficient × resonance`
+rating, and **resonance is the average item level of the pieces of that set you
+have equipped**.
+
+That single word — average — is the mechanic. Adding a piece to reach the next
+tier can make you *weaker overall* if that piece is far below the level of the
+rest: it drags the mean down, and the mean multiplies **every** active tier at
+once, not just the one you unlocked.
+
+So the real question is never "do I have four pieces". It is "do I have four
+pieces of comparable level". A tight four-piece set at high level beats a
+ragged six-piece set carrying a levelling relic.
 
 Sixteen uniques carry named attributes rather than rolled stats, and are their
 own reason to build around.
