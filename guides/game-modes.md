@@ -48,6 +48,11 @@ A deterministic weekly map with **normalized** Warden and defense ratings —
 persistent power does not apply. Everyone plays the same keep at the same
 power, and your best local score is kept for the week.
 
+**Weekly forces Nightmare to 0** regardless of the tier you have unlocked. Both
+your gear and the difficulty are pinned, because a Weekly is one shared
+challenge rather than a family of incomparable ladders. A score set at tier 40
+would not be comparable with one set at tier 4, so neither is allowed.
+
 The seed derives from the week itself, so the rotation runs without anyone
 having to turn a handle. A missed week is not possible.
 
@@ -85,12 +90,18 @@ your defenses.
 
 ## What persists
 
+Two different axes, easy to conflate:
+
 | | Keep Assault | Endless Siege | Weekly Keep |
 |---|---|---|---|
-| Persistent power | Yes | Yes | **No** |
-| Uses your Nightmare tier | Yes | **Yes**, as starting pressure | No |
-| Unlocks the next tier | Yes | No | No |
+| Persistent power (gear) | Yes | Yes | **No — normalized** |
+| **Uses** your Nightmare tier | Yes, fixed | **Yes**, plus depth | **No — forced to 0** |
+| **Unlocks** the next tier | Yes | No | No |
 | Ends at wave 5 | Yes | No | Yes |
+
+Unlocking a tier and using a tier are unrelated. Endless never raises your
+ceiling but spawns and drops against it; Weekly leaves your ceiling untouched
+and ignores it entirely.
 
 ## See also
 

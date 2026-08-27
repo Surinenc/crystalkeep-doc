@@ -3,9 +3,32 @@
 Nightmare is the difficulty ladder, and it has no top. You choose how high to
 climb before the run starts.
 
-In **Keep Assault** the level is fixed for the run. In **Endless Siege** your
-selected tier is the *starting* pressure and depth adds to it — see
-[Game modes](game-modes.md#endless-siege).
+## Two separate questions
+
+Nightmare involves two mechanisms that are easy to confuse, and they answer
+different questions.
+
+**What may you select?** Your account tracks the highest tier you have reached.
+Requesting a higher one is refused and clamped back down to it. Only **Keep
+Assault** raises that ceiling — clearing all five waves at your selected tier
+unlocks the next.
+
+**What does the run actually use?** That is a per-mode answer, and it has
+nothing to do with unlocking:
+
+| Mode | Pressure used for spawning and loot |
+|---|---|
+| Keep Assault | Your selected tier, fixed for the run |
+| Endless Siege | Your selected tier **plus depth** — `nightmare + max(0, wave - 4)` |
+| Weekly Keep | **Forced to 0**, whatever you have unlocked |
+
+Weekly pins it deliberately. In the game's own words, a Weekly is *"one shared
+challenge, not a family of incomparable ladders"* — its map and its base combat
+power are both fixed so that scores mean the same thing for everyone.
+
+Pressure is what feeds monster level, which sets both enemy scaling and the
+item-level band you roll against. So a mode that ignores your tier is also a
+mode that ignores your usual loot ceiling.
 
 ## Both sides grow on the same curve
 
