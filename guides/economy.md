@@ -28,6 +28,16 @@ Mana arrives from two places:
 **Wave bonuses.** Each cleared wave pays a lump sum, announced with the
 wave-clear line.
 
+In Endless Siege the bonus follows depth sublinearly:
+
+```
+bonus = 140 + 85 × sqrt(wave cleared)
+```
+
+It never stops growing, but it deliberately cannot outrun enemy stat pressure —
+income rises with the square root of depth while pressure rises linearly with
+it.
+
 ## Selling returns 60%
 
 Selling a defense refunds **60% of everything invested**, upgrades included.

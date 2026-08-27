@@ -18,8 +18,25 @@ This is the default run and the one everything else is balanced against.
 > Build until the keep breaks.
 
 The siege continues past wave five. Monster level, composition and pressure
-rise indefinitely, and your deepest secured wave is recorded. Persistent power
-applies; Nightmare tiers do not unlock here.
+rise indefinitely, and your deepest secured wave is recorded.
+
+**Endless does use your selected Nightmare tier.** It is the starting pressure,
+and depth is added on top of it:
+
+```
+pressure = nightmare + max(0, wave - 4)
+```
+
+The authored arc owns waves 1–5, so every wave you secure beyond the fourth
+advances one further pressure level. Starting Endless at Nightmare 20 and
+reaching wave 30 puts you at pressure 46 — and pressure is what sets monster
+level, which sets the item-level band you are rolling against.
+
+Starting from Standard is legitimate: with Nightmare at 0 the pressure still
+climbs one level per wave, so depth alone carries the run.
+
+What Endless does **not** do is unlock the next Nightmare tier. Only Keep
+Assault does that. Persistent power applies as normal.
 
 Endless is also where **Siege Contracts** appear.
 
@@ -71,7 +88,8 @@ your defenses.
 | | Keep Assault | Endless Siege | Weekly Keep |
 |---|---|---|---|
 | Persistent power | Yes | Yes | **No** |
-| Unlocks Nightmare | Yes | No | No |
+| Uses your Nightmare tier | Yes | **Yes**, as starting pressure | No |
+| Unlocks the next tier | Yes | No | No |
 | Ends at wave 5 | Yes | No | Yes |
 
 ## See also

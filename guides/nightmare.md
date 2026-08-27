@@ -1,7 +1,11 @@
 # Nightmare
 
 Nightmare is the difficulty ladder, and it has no top. You choose how high to
-climb before the run starts; the level does not move during it.
+climb before the run starts.
+
+In **Keep Assault** the level is fixed for the run. In **Endless Siege** your
+selected tier is the *starting* pressure and depth adds to it — see
+[Game modes](game-modes.md#endless-siege).
 
 ## Both sides grow on the same curve
 
