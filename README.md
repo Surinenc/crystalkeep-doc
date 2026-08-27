@@ -54,6 +54,6 @@ never seen is still winnable before you are shown it — see the
 
 ---
 
-*This wiki documents what the game implements. Values are verified against the
-game source; see `CLAUDE.md` and `.specify/memory/constitution.md` for the
-editing rules.*
+*This wiki documents what the game implements. Every formula, cost and
+threshold is verified against the game source rather than carried over from
+older text.*
