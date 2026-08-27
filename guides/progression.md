@@ -109,6 +109,30 @@ Nothing is picked up automatically.
 Unclaimed items are lost when the run ends. The victory screen reports what you
 claimed and what you left behind, honestly.
 
+The tactical map keeps a running `LOOT ON FIELD` count, and its bracket-key
+filter can hide everything below Rare — the fastest way to tell whether the
+drop across the keep is worth the walk.
+
+### Steering what drops
+
+The Warden Ledger carries a **loot preference**, and it is a genuine lever
+rather than a cosmetic sort:
+
+| Preference | Biases rolls toward |
+|---|---|
+| **Mixed** | No bias — the default |
+| **Warden** | Warden Power, Vitality, Ward stats |
+| **Fortification** | Blockade and tower stats |
+| **Floor trap** | Floor-trap stats |
+| **Wall trap** | Wall-trap stats |
+
+Choosing one adds substantial weight to every stat carrying that tag when an
+item rolls — enough to reshape your drops over a few runs, but not enough to
+guarantee any single roll. It is a nudge applied constantly, not a filter.
+
+Because defense affixes are school-tagged, this is how you stop drowning in
+wall-trap stats on a run where you build fortifications.
+
 ## Sets and uniques
 
 Six equipment sets — Warden's Oath, Bastion Foundry, Windlass Covenant, Powder

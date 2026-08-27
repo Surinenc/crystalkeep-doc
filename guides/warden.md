@@ -178,7 +178,7 @@ Ward's cap keeps it from becoming an economy.
 | **N** | **New generated keep** (before wave 1) |
 | **Enter** | **Restart after victory or defeat** |
 | F4 | Recall the last wave debrief |
-| **[ ]** | **Loot filter** |
+| **[ ]** | **Cycle the loot filter** — only while the tactical map is open |
 | Esc | Pause |
 
 ## See also

@@ -11,8 +11,9 @@ gate, tracing the path enemies will walk to the crystal. When you place a
 Blockade the ribbons update — that is the fastest way to confirm a reroute
 worked before you commit the rest of your purse.
 
-**The crystal meter** shows the objective's remaining health. It is the only
-number that ends the run.
+**The crystal meter** shows the objective's remaining health — the only number
+that ends the run. On Twin Keep there are two meters, and either one reaching
+zero ends it.
 
 **The wave strip** names what is coming next and how many lanes it arrives on.
 
@@ -39,7 +40,22 @@ dead-zone preview rotate with you, before any mana is committed.
 **Tab** shows the whole keep at once — routes, gates, defenses, landmarks, and
 which fronts attack next. It stays live: combat continues while it is open.
 
-Loot filters are on the bracket keys.
+It also tracks the loot lying on the field — `LOOT ON FIELD · n CLAIMED /
+m REMAIN` — because items are never picked up automatically and it is easy to
+finish a wave without noticing what you left behind.
+
+**The bracket keys `[` and `]` cycle the loot filter**, and they only work
+**while the map is open**. Three settings:
+
+| Filter | Shows |
+|---|---|
+| **ALL** | Every drop on the field |
+| **RARE+** | Rare and better only |
+| **SET / UNIQUE** | Only set pieces and uniques |
+
+This is a display filter for the map markers — it hides clutter so you can find
+the one drop worth crossing the keep for. It does not affect what drops, and
+nothing filtered out is lost any faster.
 
 ## The Warden Ledger
 
@@ -47,6 +63,9 @@ Loot filters are on the bracket keys.
 progression, and the Nightmare ladder. Items show their real stat lines with an
 equipped comparison — gains, tradeoffs, and explicitly which stats you would
 lose.
+
+The ledger is also where you set your **loot preference**, which biases what
+your items roll. See [Progression](progression.md#loot-is-claimed-never-collected).
 
 `Options → Accessibility → Item details` switches between Concise and Full.
 Concise is the default decision surface; Full adds rolls and provenance for
