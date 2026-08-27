@@ -127,8 +127,8 @@ Enemies that reach a crystal damage it; it has 300 health. When it falls, the
 run ends. Your own death is a respawn timer — 5 seconds in combat, 1.5 outside
 it — and nothing more.
 
-Most keeps have one crystal. Twin Keep has two, and losing either ends the run
-just the same.
+Every keep in normal play has one crystal. The two-crystal Twin Keep is an
+authored fixture, not something a regular run will hand you.
 
 ## See also
 

@@ -12,8 +12,8 @@ Blockade the ribbons update — that is the fastest way to confirm a reroute
 worked before you commit the rest of your purse.
 
 **The crystal meter** shows the objective's remaining health — the only number
-that ends the run. On Twin Keep there are two meters, and either one reaching
-zero ends it.
+that ends the run. There is one of them in normal play; the authored Twin Keep
+fixture shows two, and either one reaching zero ends it.
 
 **The wave strip** names what is coming next and how many lanes it arrives on.
 

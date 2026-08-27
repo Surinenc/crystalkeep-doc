@@ -22,8 +22,9 @@ together while the plan survives contact.
 timer — 5 seconds during combat, 1.5 outside it. Spend yourself on the lane
 that matters.
 
-Most keeps defend one crystal, with 300 health. Twin Keep defends two, and
-losing **either** ends the run.
+Every keep you will actually play defends **one** crystal, with 300 health.
+(An authored fixture, Twin Keep, defends two and is reachable only from the
+command line — see [Keeps](keeps.md#twin-keep-has-two-crystals).)
 
 **Some matchups deal exactly zero.** A Ballista deals nothing through a
 Shieldbearer's front. A Cannon deals nothing to a Fire Demon. When you see

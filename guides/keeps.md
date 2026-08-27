@@ -105,8 +105,14 @@ keep that option affordable rather than mandatory.
 
 ## The authored keeps
 
-Six hand-authored keeps sit alongside the generator, reachable with
-`--keep <name>`:
+Six hand-authored keeps sit alongside the generator — but **none of them is
+normal-play content.** A regular run always calls for a generated keep; the
+authored ones are fixtures, kept because the test bot needs ground that holds
+still and reproducing a bug needs a map that is the same tomorrow.
+
+They are reachable only with `--keep <name>` on the command line, or from the
+dev console. No menu offers them, and restarting or switching modes carries
+your **current** keep forward rather than selecting a different one:
 
 | Keep | Archetype id | Notes |
 |---|---|---|
@@ -127,6 +133,11 @@ These keeps carry no sanctuary data, so the crystal no-build zone does not
 apply on them.
 
 ### Twin Keep has two crystals
+
+> **You will not meet Twin Keep in a normal run.** It is an authored fixture,
+> reachable only with `--keep twin_keep`. Generated keeps — which is what every
+> regular run plays — always defend a single crystal at the centre. What
+> follows describes the fixture.
 
 Every other keep in the game defends one crystal. Twin Keep defends two —
 **West** at one end and **East** at the other, 30 m apart on a 144 m board.
@@ -164,7 +175,9 @@ and the mobility to be at the other.
 
 The generator never produces two crystals — `structural_synthesis.gd` emits no
 `crystals` block at all, so every generated keep falls back to a single
-objective at the centre. Twin crystals are an authored-keep feature.
+objective at the centre. Twin crystals are an authored-fixture feature, and
+since normal play only ever loads generated keeps, **the two-crystal defense is
+not part of the shipped run.**
 
 ## Seeds
 
