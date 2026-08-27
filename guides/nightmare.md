@@ -98,19 +98,54 @@ strengthens every **50** levels.
 | 60 | all five — Shieldwall now rank 2 |
 | 110 | all five — Shieldwall rank 3, the rest rank 2 |
 
-Each Law names its own pressure and its own answer. Shieldwall puts
-Shieldbearers at the front of more packets and tells you to flank, use crush,
-or break the formation. They are previewed rather than hidden: you see the
-roster and the events before you commit to the climb.
+Each Law names its own pressure, its own answer, and its own reward:
+
+| Law | Pressure | The stated answer | Its cache |
+|---|---|---|---|
+| **Shieldwall** | Shieldbearers lead and protect more formation packets | Flank the column, use Crush, or break its formation | Fortification |
+| **Ember Host** | Fire Demons reinforce increasingly frequent mixed squads | Chill first, then use non-Cannon damage | Floor control |
+| **Giant March** | Later waves add Colossi that demand Warden intervention | Kite, break armour, protect the defense line | Warden |
+| **Siegecraft** | Ranged attackers and Sappers coordinate against structures | Spread defenses, break line of sight, intercept | Wall defense |
+| **Attrition** | Assaults carry more bodies and recover less time between beats | Overlapping coverage, and preserve mana | Mixed arsenal |
+
+**The cache column is not decoration.** Each Law's milestone reward rolls with
+that Law's own loot preference — Shieldwall pays fortification stats,
+Siegecraft pays wall-trap stats, Giant March pays Warden stats. The pressure
+that beat you is also the pressure that arms you against it, and the ladder
+therefore pushes your gear toward answering the thing currently pushing back.
+
+Note that Attrition's answer mentions preserving mana for repairs. Repairs are
+free in a normal run; that advice is aimed at the Endless **Iron Levy**
+contract, where they are not.
+
+Laws are previewed rather than hidden: you see the roster and the events before
+you commit to the climb.
 
 ## Rewards
 
 Item level bands scale with Nightmare, so climbing is how you reach higher roll
-ranges. Milestone clears in the high bands pay first-clear caches with
-guaranteed Epic-or-better contents and one-time gold premiums.
+ranges. A tier's band runs from `nightmare × 10` to `nightmare × 10 + 13`, so
+**adjacent tiers overlap by about 23%** — a lucky roll one tier down can still
+beat an unlucky roll one tier up, and climbing is a shift in the distribution
+rather than a hard cutover.
 
-Because the item-level band is `nightmare × 10` with no cap, there is always a
-next band.
+Every victory pays an item and **100 + 20 per Nightmare level** in gold.
+
+**Milestone caches** are the real prize, and they are stricter than they look.
+You get one only when both things are true:
+
+- the Nightmare level is a **multiple of 10**, and
+- it is a **first clear at your ceiling** — the run that unlocks the next tier.
+
+Replaying a milestone level you have already beaten pays an ordinary victory.
+The cache is a one-time reward for arriving, not a farm.
+
+When one does land it is **guaranteed Legendary or better**, rolled with the
+preference of the Law that milestone activated, and it carries a gold bonus of
+**250 per milestone tier** — +250 at N10, +500 at N20, +750 at N30 — on top of
+the ordinary victory gold.
+
+Because the band is `nightmare × 10` with no cap, there is always a next one.
 
 ## See also
 
