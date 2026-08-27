@@ -13,10 +13,11 @@ damage do.
 |:--:|:--:|:--:|:--:|:--:|
 | <img src="../assets/enemies/goblin.png" width="110" alt="Goblin"> | <img src="../assets/enemies/runner.png" width="110" alt="Runner"> | <img src="../assets/enemies/orc.png" width="110" alt="Orc"> | <img src="../assets/enemies/shieldbearer.png" width="110" alt="Shieldbearer"> | <img src="../assets/enemies/sapper.png" width="110" alt="Sapper"> |
 | **Goblin** | **Runner** | **Orc** | **Shieldbearer** | **Sapper** |
-| <img src="../assets/enemies/frostbound.png" width="110" alt="Frostbound"> | <img src="../assets/enemies/frostbound.png" width="110" alt="Fire Demon"> | <img src="../assets/enemies/crossbowman.png" width="110" alt="Crossbowman"> | <img src="../assets/enemies/bombardier.png" width="110" alt="Bombardier"> | <img src="../assets/enemies/colossus.png" width="110" alt="Colossus"> |
+| <img src="../assets/enemies/frostbound.png" width="110" alt="Frostbound"> | <img src="../assets/enemies/emberbound.png" width="110" alt="Fire Demon"> | <img src="../assets/enemies/crossbowman.png" width="110" alt="Crossbowman"> | <img src="../assets/enemies/bombardier.png" width="110" alt="Bombardier"> | <img src="../assets/enemies/colossus.png" width="110" alt="Colossus"> |
 | **Frostbound** | **Fire Demon** | **Crossbowman** | **Bombardier** | **Colossus** |
 
-The Fire Demon shares the Frostbound's model — see below.
+The Frostbound and the Fire Demon are the same mesh in two colours. That is
+not an accident of the art — it is what the game does, and it matters.
 
 ### Runner — 35 HP, 5.6 m/s, 6 damage, 12 mana
 
@@ -48,11 +49,14 @@ The mirror of the Frostbound: **immune to fire**, and takes **1.50× control
 from chill**. A Cannon deals it exactly zero. Chill it, then kill it with the
 Warden, a Ballista, or a Wall Maul.
 
-> **Frostbound and Fire Demon share a model.** The game builds both from the
-> same mesh and separates them by colour — icy white against ember orange. They
-> arrive in the same waves and want opposite answers, so colour is the only
-> thing telling you which mistake you are about to make. A lane built to answer
-> one has surrendered to the other.
+> **Frostbound and Fire Demon are the same mesh.** `enemy.gd` builds both from
+> one model and separates them by tint — the Fire Demon takes a 58% shift
+> toward ember orange plus an emissive glow, against the Frostbound's 18% cool
+> grey. Every other enemy in the game gets 18%; the Fire Demon is tinted three
+> times harder precisely so you can tell them apart at speed.
+>
+> They arrive in the same waves and want opposite answers. Colour is the only
+> thing telling you which mistake you are about to make.
 
 ### Sapper — 80 HP, 3.8 m/s, 10 damage, 25 mana
 
