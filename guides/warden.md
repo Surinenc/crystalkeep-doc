@@ -14,12 +14,14 @@ You have two resources and they behave nothing alike.
 
 **Health** falls when you are hit and does not regenerate on its own. If it
 reaches zero you go down and respawn on a timer — **5 seconds during combat,
-1.5 outside it** — and **the run continues**. The
-crystal is the only defeat condition in Crystal Keep. Dying is a setback, not a
-loss, and you should be willing to spend yourself on a lane that matters.
+1.5 outside it** — and **the run continues**. A fallen crystal is the only
+defeat condition in Crystal Keep. Dying is a setback, not a loss, and you
+should be willing to spend yourself on a lane that matters.
 
 **Ward** is a pool of **100** that refills at **6 per second**, constantly and
-for free. It pays for your spells and your dash. Because it regenerates and is
+for free. Both numbers are bases — equipment scales the pool (`hero_ward`) and
+the regeneration (`hero_ward_regen`) independently, as it scales your health
+and sword damage. It pays for your spells and your dash. Because it regenerates and is
 capped, Ward at full is Ward being wasted — if you are standing at 100 in the
 middle of a wave, you are under-using your kit.
 
@@ -42,12 +44,23 @@ damage already landing.
 ## The sword
 
 A two-step combo dealing **30** base damage per swing in the **slash** channel,
-with a reverse cut on the second step. An attack pressed during recovery is
-buffered and chains rather than being dropped, so committing to the first swing
+with a reverse cut on the second step. Swings are **0.5 s** apart, and a
+buffered attack turns into the second cut at **0.3 s** — pressed during
+recovery it chains rather than being dropped, so committing to the first swing
 does not cost you the second.
+
+**The sword cleaves.** Each swing tests a sphere roughly **1.5 m** across,
+centred about **1.35 m** in front of you, and damages **every** enemy inside it
+— not the nearest one. Against a packed group of goblins one cut is one cut
+per goblin. It also applies a small knockback to each.
+
+This is why wading into a swarm is correct and duelling a single orc is not:
+your damage scales with how many bodies are pressed together in front of you.
 
 Slash is the wrong channel against orcs (0.55×) and bombardiers (0.70×), and
 the right one against goblins (1.25×) and crossbowmen (1.25×).
+
+Sword damage is a base too — `hero_power` on your equipment multiplies it.
 
 ## The three spells
 
@@ -62,9 +75,22 @@ commitment.
 
 ### Hex of Frailty — 35 Ward, 0.5 s windup, 14 m
 
-Curses a zone for **18 seconds**. Everything inside takes **30% more damage
-from any source** — your sword, your traps, and every tower firing into it. It
-also marks a priority enemy, and towers retarget onto the mark.
+Curses a **4 m** zone for **18 seconds**. Everything inside takes **30% more
+damage from any source** — your sword, your traps, and every tower firing into
+it.
+
+**Hex zones never stack.** Two overlapping Hexes do not compound; the strongest
+one applies. Casting a second Hex into the first is wasted Ward — the answer to
+a bigger problem is a bigger lane, not a deeper curse.
+
+The zone also **marks one enemy** near the cast point as a priority target, and
+every tower that can see it retargets onto the mark. That mark is separate from
+the zone and much shorter: **6 seconds, one enemy**. The 18-second field keeps
+amplifying whatever walks through it long after the mark has expired.
+
+So Hex does two jobs on different clocks. Cast it on ground you expect traffic
+to cross, and the field pays for the whole wave; cast it on the thing you want
+dead now, and the mark redirects your towers for six seconds.
 
 This is your strongest spell and it deals no damage at all. Hex is how you tell
 a lane full of defenses where to concentrate.
@@ -75,11 +101,46 @@ Heals the nearest defense **120 HP over 8 seconds** and grants it **−25% damag
 taken** while active. Saving a defense that was about to die pays **+3 Ward**,
 which is most of the cast back.
 
+**Mend also primes the defense — and this is the half nobody reads.** Every
+cast cuts the target's cooldown, and how much depends on its tier:
+
+| Target tier | Cooldown removed |
+|---|---|
+| T1 | 0.30 s (tower) / 0.25 s (trap) |
+| T2 | 0.80 s (tower) / 0.75 s (trap) |
+| **T3 — Masterwork** | **all of it — the defense fires immediately** |
+
+So Mend on a Masterwork Cannon is not a heal. It is a **second shot, on
+demand**, for 30 Ward. On a Masterwork Wall Maul it is a free trigger the
+instant something walks past. The screen tells you it happened —
+`MECHANISM PRIMED` on a tower, `TRAP PRIMED` on a trap.
+
+From **T2 upward** a mended tower also **drops its current target and picks a
+new one immediately**, which is the cheapest way to pull a tower off something
+it cannot hurt.
+
+Mend is therefore three spells wearing one name: a heal, a damage reduction,
+and a trigger. Against a Masterwork board it is the trigger that matters most,
+and holding a Mend for the moment a Colossus enters the Cannon's arc is a
+better use of 30 Ward than repairing anything.
+
 ### Fireball — 45 Ward, 0.8 s windup, 20 m
 
-Impact damage plus a burning effect, in the **fire** channel. Note the two
-enemies that care most: a Frostbound takes **1.50×** from fire, and a Fire
-Demon takes **zero**. Fireball is a specialist answer, not a general one.
+A travelling projectile — **22 m/s**, up to 20 m — that bursts for **30
+impact damage** in a **3 m** radius and sets everything it catches **burning**:
+**4 damage every 0.5 s for 6 seconds**, or **48 more**. Both halves are the
+**fire** channel.
+
+So a clean Fireball is **78 damage** to a single target, and 78 to each target
+in the burst. That is its real weight, and the burn is most of it.
+
+Burn **refreshes rather than stacks** — a second Fireball on the same enemy
+resets the 6 seconds instead of doubling the rate. Spreading Fireballs across
+new targets is worth more than stacking them on one.
+
+Note the two enemies that care most: a Frostbound takes **1.50×** from fire,
+and a Fire Demon takes **zero** — from the impact *and* the burn. Fireball is a
+specialist answer, not a general one.
 
 ## Counterplay pays Ward
 

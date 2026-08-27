@@ -151,11 +151,12 @@ farm it into an economy.
 Two of your three spells exist to make the defenses better rather than to
 replace them.
 
-- **Hex of Frailty** marks a zone. Everything that takes damage inside it takes
-  **30% more** — including tower fire. It also marks a priority target, and
-  towers retarget onto it.
-- **Mending Ward** heals a defense and grants it **−25% damage taken** while
-  active.
+- **Hex of Frailty** curses a **4 m** zone for 18 s. Everything that takes
+  damage inside it takes **30% more** — including tower fire. It also marks one
+  enemy for **6 s**, and towers retarget onto the mark. Hex zones never stack.
+- **Mending Ward** heals a defense, grants it **−25% damage taken**, and
+  **primes it** — cutting its cooldown, or resetting it entirely if the defense
+  is Masterwork.
 
 The keep kills things. You decide where it kills them hardest.
 

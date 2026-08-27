@@ -172,6 +172,12 @@ This is the real argument for a third tier, and it is why the answer changes by
 defense. A Masterwork Frost Rune gains a mechanic that did not exist before; a
 Masterwork Blockade is just a tougher wall.
 
+**Masterwork also changes what Mending Ward does to it.** Mend primes any
+defense, cutting its cooldown — but on a Masterwork defense it removes the
+cooldown entirely and the defense fires at once. That turns your heal into an
+on-demand trigger, and it is the strongest reason to take one key defense to
+T3 rather than two to T2. See [The Warden](warden.md#mending-ward--30-ward-04-s-windup-14-m).
+
 Selling returns **60%** of everything invested — including upgrades.
 
 There are two ways to sell: press **X** while aiming at a defense, or open the
