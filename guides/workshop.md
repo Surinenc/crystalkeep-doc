@@ -38,7 +38,7 @@ Cleansing respects seals.
 | **Reroll values** | Salt of Renewal | Rerolls every unsealed stat's value without changing which stats are present |
 | **Seal one stat** | Ichor of Sealing | Permanently protects one stat from every operation **except Cleansing** |
 | **Cleanse item** | Salt of Cleansing | Removes every ordinary stat **and every seal**, preserving the item |
-| **Invoke Cursed Sigil** | Cursed Sigil | One final 25% roll: overcap a value, add a slot, bind the item, or destroy it |
+| **Invoke Cursed Sigil** | Cursed Sigil | One final roll with four equal outcomes — see below |
 
 The Ledger also offers **Reroll all stats** for gold, as a single expensive
 operation rather than a material cost.
@@ -53,8 +53,30 @@ is how you undo the bank if you want a fresh start.
 Once every stat is sealed the Workshop says so plainly — *"Every stat is
 sealed"* — and refuses further modification.
 
-The Cursed Sigil is the only operation that can destroy an item outright. It is
-a 25% roll with four outcomes, one of which is losing the item.
+## The Cursed Sigil
+
+The Sigil is the only operation that can destroy an item outright, and the only
+one that is **always terminal**. Four outcomes, **25% each**:
+
+| Outcome | Result |
+|---|---|
+| **Empowered** | One random stat is rerolled to **two to three times its normal maximum** for the item's level — far outside anything the item could roll legitimately |
+| **Expanded** | The item gains **an extra stat slot**, filled with a new roll |
+| **Bound** | Nothing changes |
+| **Destroyed** | The item is gone |
+
+**Every outcome curses the item**, including the two good ones. A cursed item
+can never be modified again — the Workshop refuses it outright with *"This item
+is cursed and cannot be modified"*. There is no cleansing it, no sealing after
+the fact, and no second Sigil.
+
+So the Sigil is not a gamble you can repeat on the same item. It is the last
+thing you will ever do to it, and the correct time to invoke it is when the
+item is otherwise finished — every stat you want is present and sealed, and the
+only remaining upside is a roll no ordinary operation can produce.
+
+One guard rail: an item you have **protected** cannot receive a Sigil at all.
+You have to unprotect it first, deliberately.
 
 ## Salvage
 
