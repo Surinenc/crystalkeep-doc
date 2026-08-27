@@ -75,10 +75,14 @@ The debrief is the honest record of which placements earned their cost. Read it
 before spending the next purse — a defense with high damage per mana deserves
 an upgrade, and one contributing nothing deserves selling.
 
-## The crystal is the only loss condition
+## A fallen crystal is the only loss condition
 
-Enemies that reach the crystal damage it. When it falls, the run ends. Your own
-death is a respawn timer and nothing more.
+Enemies that reach a crystal damage it; it has 300 health. When it falls, the
+run ends. Your own death is a respawn timer — 5 seconds in combat, 1.5 outside
+it — and nothing more.
+
+Most keeps have one crystal. Twin Keep has two, and losing either ends the run
+just the same.
 
 ## See also
 

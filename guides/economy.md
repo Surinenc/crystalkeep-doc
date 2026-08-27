@@ -26,7 +26,18 @@ Mana arrives from two places:
 | Colossus | 420 |
 
 **Wave bonuses.** Each cleared wave pays a lump sum, announced with the
-wave-clear line.
+wave-clear line. In Keep Assault it grows by 60 each wave:
+
+| Wave cleared | Bonus |
+|---|---:|
+| 1 | 200 |
+| 2 | 260 |
+| 3 | 320 |
+| 4 | 380 |
+| 5 | — |
+
+Clearing the fifth wave wins the run, so it pays no build bonus; there is
+nothing left to build for.
 
 In Endless Siege the bonus follows depth sublinearly:
 

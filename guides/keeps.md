@@ -91,15 +91,45 @@ cheapest wall instead.
 Sealing every lane is legal. It is also expensive, and F7 exists precisely to
 keep that option affordable rather than mandatory.
 
-## The five legacy keeps
+## The authored keeps
 
-Five hand-authored keeps predate the generator: **fortress, plaza, sprawl,
-caldera, bastion**. They are no longer what a normal run plays. They remain
-reachable with `--keep <name>` and serve as the quality gate's fixtures — the
-bot must win on every one of them before a build ships.
+Six hand-authored keeps sit alongside the generator, reachable with
+`--keep <name>`:
 
-They carry no sanctuary data, so the crystal no-build zone does not apply
-there.
+| Keep | Archetype id | Notes |
+|---|---|---|
+| fortress | `fortress` | The gate's default fixture |
+| plaza | `plaza` | Open lanes, compensated per contract C3 |
+| sprawl | `sprawl` | |
+| caldera | `hazard` | |
+| bastion | `verticality` | |
+| **twin_keep** | `twin_keep_12x12` | **144 m, and two crystals** |
+
+A seventh, `initiation`, backs the tutorial.
+
+The archetype id is not always the file name — bastion is `verticality` and
+caldera is `hazard`. That matters because Endless records are filed by
+archetype.
+
+These keeps carry no sanctuary data, so the crystal no-build zone does not
+apply on them.
+
+### Twin Keep has two crystals
+
+Every other keep in the game defends one crystal. Twin Keep defends two —
+**West** at one end and **East** at the other, 30 m apart on a 144 m board.
+
+**Losing either one ends the run.** The game does not check whether the other
+still stands — the first crystal to fall ends it. There is no fallback
+objective and no partial credit.
+
+One purse, two objectives, and the same wave budget. It is the sharpest test of
+whether you can read a keep before committing, because splitting your defenses
+evenly is rarely the answer and committing entirely to one side is never one.
+
+The generator never produces two crystals — `structural_synthesis.gd` emits no
+`crystals` block at all, so every generated keep falls back to a single
+objective at the centre. Twin crystals are an authored-keep feature.
 
 ## Seeds
 

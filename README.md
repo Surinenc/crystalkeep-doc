@@ -40,8 +40,9 @@ Ward pool. The keep does the killing. You decide where it kills hardest.
 
 ## Three rules worth knowing before you play
 
-**The crystal is the only defeat condition.** Your own death is a respawn
-timer. Spend yourself on the lane that matters.
+**A fallen crystal is the only defeat condition.** Your own death is a respawn
+timer. Spend yourself on the lane that matters — but note Twin Keep defends
+*two* crystals, and losing either ends the run.
 
 **Some matchups deal exactly zero.** A Ballista deals nothing through a
 Shieldbearer's front; a Cannon deals nothing to a Fire Demon. No item level or

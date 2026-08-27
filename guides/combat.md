@@ -87,9 +87,11 @@ Skilled interventions pay you **Ward**, the currency your spells run on:
 |---|---:|
 | Interrupt a Giant | +8 |
 | Interrupt Artillery | +5 |
+| **Intercept a Sapper** | **+4** |
 | Save a defense with Mend | +3 |
 | Flank a Shieldbearer | +2 |
 | Colossus last assault | +2 |
+| Keeper's Rhythm | +1 |
 
 The loop is deliberate. Support the towers well, earn Ward, cast more support.
 Ward is capped and regenerates on its own, so this cannot spiral — you cannot

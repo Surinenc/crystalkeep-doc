@@ -13,7 +13,8 @@ is weakest, and to make the defenses hit harder while you are there.
 You have two resources and they behave nothing alike.
 
 **Health** falls when you are hit and does not regenerate on its own. If it
-reaches zero you go down and respawn on a timer — **the run continues**. The
+reaches zero you go down and respawn on a timer — **5 seconds during combat,
+1.5 outside it** — and **the run continues**. The
 crystal is the only defeat condition in Crystal Keep. Dying is a setback, not a
 loss, and you should be willing to spend yourself on a lane that matters.
 
@@ -61,9 +62,9 @@ commitment.
 
 ### Hex of Frailty — 35 Ward, 0.5 s windup, 14 m
 
-Curses a zone. Everything inside takes **30% more damage from any source** —
-your sword, your traps, and every tower firing into it. It also marks a
-priority enemy, and towers retarget onto the mark.
+Curses a zone for **18 seconds**. Everything inside takes **30% more damage
+from any source** — your sword, your traps, and every tower firing into it. It
+also marks a priority enemy, and towers retarget onto the mark.
 
 This is your strongest spell and it deals no damage at all. Hex is how you tell
 a lane full of defenses where to concentrate.
@@ -88,9 +89,11 @@ Skilled interventions refund into the pool that funds them:
 |---|---:|
 | Interrupt a Giant | +8 |
 | Interrupt Artillery | +5 |
+| **Intercept a Sapper** | **+4** |
 | Save a defense with Mend | +3 |
 | Flank a Shieldbearer | +2 |
 | Colossus last assault | +2 |
+| Keeper's Rhythm | +1 |
 
 The loop closes on purpose: support the towers, earn Ward, cast more support.
 Ward's cap keeps it from becoming an economy.

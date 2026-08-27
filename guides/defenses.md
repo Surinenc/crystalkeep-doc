@@ -75,7 +75,7 @@ A ghost shows where the defense will land. It refuses for concrete reasons:
 
 - **Surface mismatch.** Floor defenses need a near-level surface; wall traps
   need a near-vertical one. The preview will not lie to you about this.
-- **Distance.** You must be within build range of the spot.
+- **Distance.** You must be within **14 m** of the spot.
 - **Overlap.** The footprint must be clear of world, enemies, other defenses
   and the crystal.
 - **Sanctuary.** The ground around the crystal is protected — see below.
@@ -88,14 +88,27 @@ set of crystal and sanctuary cells, and the blocked area grows with the
 footprint of what you are trying to place. A wide defense is refused further
 out than a small one.
 
-The five hand-authored keeps in `--keep` carry no sanctuary data, so the rule
-does not apply there. That asymmetry is a property of the legacy keeps, not a
-design choice about the crystal.
+The authored keeps reached with `--keep` carry no sanctuary data, so the rule
+does not apply there. That asymmetry is a property of those keeps, not a design
+choice about the crystal.
 
 ## Tiers and selling
 
-Defenses upgrade through tiers, paid from the same purse. Selling returns
-**60%** of everything invested — including upgrades.
+Defenses upgrade through **three tiers**, paid from the same purse. The cost is
+derived from the build cost rather than fixed:
+
+| Step | Cost |
+|---|---|
+| T1 → T2 | the defense's base cost |
+| T2 → T3 | **twice** the base cost |
+| T3 | no further upgrade |
+
+So a Ballista at 100 costs 100 to reach T2 and 200 more to reach T3 — 400 mana
+in total for one fully upgraded tower, against 400 for four T1 Ballistas
+covering four times the ground. That trade is the build phase's central
+question and the game deliberately offers no advisor for it.
+
+Selling returns **60%** of everything invested — including upgrades.
 
 There are two ways to sell: press **X** while aiming at a defense, or open the
 build wheel while aiming at one and choose the sell segment.
