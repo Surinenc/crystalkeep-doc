@@ -13,7 +13,8 @@ together while the plan survives contact.
 4. **Fight.** Hold the weak point, amplify your towers, intervene where the
    plan is failing.
 5. **Read the debrief.** Find out which placements earned their cost.
-6. **Repeat**, five times.
+6. **Repeat**, five times. After waves 2 and 4 you also pick a
+   [Siege Doctrine](doctrines.md) — a free, run-long upgrade.
 
 ## Three things that will save your first run
 
@@ -31,6 +32,10 @@ This is the single most common way a first run is lost.
 
 **Mono-builds lose.** Ten ballistas is a build that has already surrendered to
 wave 3. Mix damage channels.
+
+**Repairs are free.** A damaged defense costs nothing to restore, so there is
+never a reason to leave one hurt or to sell one that is merely damaged. (The
+Iron Levy contract in Endless is the sole exception.)
 
 ## Starting resources
 
@@ -50,6 +55,10 @@ A reasonable opening on any keep:
 That leaves change for a reaction. Do not spend the whole purse before seeing a
 wave.
 
+**Spread before you upgrade.** Four Tier 1 towers out-damage one Tier 3 tower
+for the same mana. Concentration buys range, durability and a new mechanic at
+Tier 3 — all worth having, but only once every lane is already answered.
+
 ## The Initiation
 
 The Tutorial entry runs nine lessons that teach by doing rather than by
@@ -68,3 +77,4 @@ why.
 - [Defenses](defenses.md) — all ten, with costs and mounting rules
 - [Keeps](keeps.md) — how the ground is generated and what it guarantees
 - [Waves](waves.md) — what arrives, and what it announces
+- [Siege Doctrines](doctrines.md) — the two free upgrades every run offers
