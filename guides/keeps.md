@@ -128,9 +128,32 @@ Every other keep in the game defends one crystal. Twin Keep defends two —
 still stands — the first crystal to fall ends it. There is no fallback
 objective and no partial credit.
 
-One purse, two objectives, and the same wave budget. It is the sharpest test of
-whether you can read a keep before committing, because splitting your defenses
-evenly is rarely the answer and committing entirely to one side is never one.
+One purse, two objectives, and the same wave budget.
+
+**Each wave event commits to one crystal.** Events do not switch target
+mid-packet and the choice is never hidden — a packet announced against the West
+crystal goes to the West crystal. And the enemies come from the **two gates
+nearest that objective**, not from wherever the round-robin lands, so an event
+aimed West uses the western corridors.
+
+**The schedule teaches one district before asking you to rotate:**
+
+| Wave | Events target |
+|---|---|
+| 1 | West, West |
+| 2 | East, East |
+| 3 | West, East |
+| 4 | East, West, East |
+| 5 | West, East, West, East |
+
+The first two waves let you learn each side on its own. From wave 3 the events
+alternate, and Twin Keep becomes a **rotation problem** — you are not defending
+two lanes so much as deciding what can hold without you while you are at the
+other end of a 144 m keep.
+
+That is why splitting your purse evenly is rarely right and committing entirely
+to one side is never right. What you need is one side that survives unattended
+and the mobility to be at the other.
 
 The generator never produces two crystals — `structural_synthesis.gd` emits no
 `crystals` block at all, so every generated keep falls back to a single
