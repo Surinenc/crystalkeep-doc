@@ -38,6 +38,15 @@ climbs one level per wave, so depth alone carries the run.
 What Endless does **not** do is unlock the next Nightmare tier. Only Keep
 Assault does that. Persistent power applies as normal.
 
+### Endless pays out every fifth wave
+
+From **wave 10**, every fifth wave secured (10, 15, 20, 25…) grants a
+**guaranteed item** — rolled against your current pressure — plus **30 + 4 per
+wave** in gold. Wave 10 pays 70, wave 15 pays 90, and so on.
+
+That cadence gives a losing run a target. Reaching wave 10 banks something
+real; dying on wave 14 banks nothing beyond what wave 10 already paid.
+
 Endless is also where **Siege Contracts** appear.
 
 ## Weekly Keep
@@ -61,6 +70,24 @@ having to turn a handle. A missed week is not possible.
 Endless Siege draws seeded contracts that change how a wave has to be answered.
 They are **previewed before the wave they affect** — planning problems, not
 hidden inflation.
+
+**The schedule is fixed:**
+
+- Nothing before **wave 8**. The first eight waves are contract-free.
+- Contracts run in **blocks of four waves** — 8–11, 12–15, 16–19, and so on —
+  and are previewed during the build phase of the wave before a block starts.
+- **One contract at a time until wave 16**, then **two** for the rest of the
+  run.
+- Consecutive blocks never draw the identical set, so a contract cannot silently
+  persist across a block boundary by chance.
+- **Searing Host and Rime Host can never be active together.** The two mirrors
+  are mutually exclusive by rule, not by luck.
+
+**Contracts pay you for taking them.** Each active contract adds **12%** to the
+reward premium on Endless milestone rewards — so a single contract is +12% and
+the two-contract era from wave 16 is **+24%** on the item level you roll
+against. The difficulty and the payout rise together, which is why the deep
+game is worth playing rather than merely survivable.
 
 | Contract | Effect | Its stated answer |
 |---|---|---|
@@ -88,6 +115,16 @@ Shieldbearer, Sapper, Frostbound, Fire Demon, Crossbowman and Bombardier.
 Specialist Rush makes all of them faster, including how quickly Sappers find
 your defenses.
 
+## Siege Doctrines
+
+Both Keep Assault and Endless offer **Siege Doctrines** — a choice of three
+after clearing wave 2, and another after wave 4. They are run-long and free,
+and each one is worth roughly a 200-mana upgrade.
+
+Endless does **not** keep offering them as it goes: a wave-40 Endless run has
+exactly the same two doctrines a five-wave campaign gets. See
+[Siege Doctrines](doctrines.md).
+
 ## What persists
 
 Two different axes, easy to conflate:
@@ -98,6 +135,8 @@ Two different axes, easy to conflate:
 | **Uses** your Nightmare tier | Yes, fixed | **Yes**, plus depth | **No — forced to 0** |
 | **Unlocks** the next tier | Yes | No | No |
 | Ends at wave 5 | Yes | No | Yes |
+| Siege Doctrines | Yes (waves 2, 4) | Yes (waves 2, 4) | Yes (waves 2, 4) |
+| Siege Contracts | No | **Yes, from wave 8** | No |
 
 Unlocking a tier and using a tier are unrelated. Endless never raises your
 ceiling but spawns and drops against it; Weekly leaves your ceiling untouched

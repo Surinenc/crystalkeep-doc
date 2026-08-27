@@ -23,9 +23,13 @@ wave number alone. Nothing you did during the fight shifts them, and the
 reroll is deterministic too — the same run, rerolled at the same point, shows
 the same second set. You cannot fish for a doctrine by playing differently.
 
-Doctrines are offered in **both Keep Assault and Endless Siege**, on the same
-two waves. Endless does not keep handing them out as it goes; a long Endless
-run has exactly the same two as a five-wave campaign.
+Doctrines are offered in **every mode** — Keep Assault, Endless Siege and the
+Weekly Keep — on the same two waves. Endless does not keep handing them out as
+it goes; a wave-40 Endless run has exactly the same two as a five-wave campaign.
+
+They are not affected by the Weekly's power normalization either. Weekly pins
+your gear, not your doctrines, so the choice matters more there than anywhere
+else: it is one of the few advantages the mode still lets you build.
 
 ## What a doctrine actually is
 
