@@ -1,8 +1,15 @@
 # Keeps
 
-A normal run plays a **generated keep** — a fortress the game builds from a
-seed and then proves fair before you ever see it. No two runs hand you the same
-ground, and the ground is the first thing you should read.
+A normal run plays a **generated keep** — a fortress built from a seed by the
+constraint solver and proved fair before you ever see it. The ground is the
+first thing you should read.
+
+**They are solved ahead of time, not while you wait.** The build ships with a
+set of keeps the generator has already solved and validated, and a run picks one
+at random. Solving live takes seconds and cannot be threaded in the web export,
+which would put that wait in front of every launch. `--seed N` still solves one
+live if you want a specific keep, and every shipped keep records the seed it
+came from, so any of them can be regenerated exactly.
 
 ## What a keep is made of
 
@@ -16,7 +23,10 @@ the grid width sets the size of the keep:
 | 8 × 8 | 144 m |
 | 9 × 9 | 162 m |
 
-Width is chosen per seed. Doors follow the shape rather than a fixed number:
+Width is chosen per seed, and the shipped set leans small: it is mostly **8 × 8**
+with a handful of 7 × 7. A 9 × 9 is possible from the generator but does not
+appear in the current build, so in practice you are reading a 126 m or 144 m
+board. Doors follow the shape rather than a fixed number:
 **2, 3 or 4** gates, selected from the finished topology by which ones open
 ground the others do not. A keep whose second gate would walk the same corridor
 as the first simply does not get one.
@@ -71,23 +81,51 @@ and what do I want waiting there?
 
 ## Landmarks that change the ground
 
-Some keeps carry landmarks that alter traversal **during the run**. About one
-keep in four has one.
+**Every generated keep carries at least one landmark**, and roughly **45%**
+carry a second. They are not a rare flourish — assume one is present and go
+find it.
 
-| Landmark | Behaviour |
+The catalogue holds **twenty**, and which ones a keep can draw depends on its
+archetype, so a foundry keep and a rime keep offer different furniture. Fifteen
+of the twenty appear across the shipped set:
+
+| Landmark | Charges | Radius |
+|---|---:|---:|
+| Iron Portcullis | 2 | 14 m |
+| Collapsing Aqueduct | 1 | 22 m |
+| Sealed Breach Gate | 1 | 18 m |
+| Siege Lift | 2 | 12 m |
+| War Horn Rostrum | 2 | 16 m |
+| Wind Vent | 2 | 12 m |
+| Floodgate Cistern | 2 | 15 m |
+| Oil Channel | 2 | 14 m |
+| Powder Magazine | 1 | 11 m |
+| Chain Anchor | 2 | 10 m |
+| Stoneward Shrine | 2 | 10 m |
+| Watch Gallery, Rime Basin, Fallen Bell Tower, Oath Plaza | — | — |
+
+The last row is different in kind: those have **no charges and no radius**. They
+are terrain and cover — ground that shapes a fight without being operated.
+
+**Only three landmarks change routes**: the Collapsing Aqueduct, the Sealed
+Breach Gate, and the Counterweight Bridge. Everything else changes what happens
+where the routes already run.
+
+| Route-changer | Behaviour |
 |---|---|
 | Collapsing Aqueduct | Collapses on a scheduled wave — routes change |
 | Sealed Breach Gate | Opens on a scheduled wave — a new route appears |
 | Counterweight Bridge | You raise or lower it between waves — press **T** |
-| Siege Lift | You operate it for vertical movement — press **T** |
 
 Scheduled changes announce themselves before the wave that triggers them —
 `COLLAPSING AQUEDUCT COLLAPSES · ROUTES CHANGE`. The wave it fires on is
 derived from the seed, so it is not always the same wave.
 
 Interactive landmarks are operated with **T**, and only between waves — they
-spend a charge each time, so a bridge with two charges can be moved twice in a
-run. Read the banner before you touch one: it names the verb, the current
+spend a charge each time, so a two-charge landmark can be used twice in a run
+and a one-charge landmark is a single irreversible decision. (The **Spent
+Mechanisms** siege contract removes one charge from every compatible landmark,
+which turns the one-charge ones off entirely.) Read the banner before you touch one: it names the verb, the current
 state, the charges left, and when the change takes effect.
 
 A topology change is a **redeployment problem**. The defenses you placed for
