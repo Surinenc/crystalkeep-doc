@@ -11,6 +11,19 @@ or you sell it.
 
 ## The three schools
 
+<p align="center">
+<img src="../assets/defenses/blockade-v1.png" width="70" alt="Blockade">
+<img src="../assets/defenses/slow-v1.png" width="70" alt="Frost Rune">
+<img src="../assets/defenses/ballista-v1.png" width="70" alt="Ballista">
+<img src="../assets/defenses/cannon-v1.png" width="70" alt="Cannon">
+<img src="../assets/defenses/tar-v1.png" width="70" alt="Tar">
+<img src="../assets/defenses/spikes-v1.png" width="70" alt="Spikes">
+<img src="../assets/defenses/spring-v1.png" width="70" alt="Springboard">
+<img src="../assets/defenses/wall_blades-v1.png" width="70" alt="Wall Blades">
+<img src="../assets/defenses/harpoon-v1.png" width="70" alt="Harpoon">
+<img src="../assets/defenses/wall_maul-v1.png" width="70" alt="Wall Maul">
+</p>
+
 **Fortifications** mount on the floor and hold ground.
 **Floor traps** mount on the floor and trigger on contact or proximity.
 **Wall traps** mount on walls, which turns vertical surface into build space.
@@ -21,10 +34,10 @@ Every defense has HP. Nothing is indestructible — including the Blockade.
 
 | Defense | Cost | Channel | Range | Notes |
 |---|---:|---|---:|---|
-| Blockade | 60 | — | — | 350 HP. Reroutes enemies; does not attack. |
-| Frost Rune | 80 | — (chill) | 3.5 m | Aura. 40% slow. 150 HP. |
-| Ballista | 100 | Pierce | 3.5–14 m | 90° arc, 15% crit at 2.0×. 220 HP. |
-| Cannon | 125 | Crush | 4.0–12 m | 360° arc, 3.25 m splash, staggers. 220 HP. |
+| <img src="../assets/defenses/blockade-v1.png" width="34" alt=""> Blockade | 60 | — | — | 350 HP. Reroutes enemies; does not attack. |
+| <img src="../assets/defenses/slow-v1.png" width="34" alt=""> Frost Rune | 80 | — (chill) | 3.5 m | Aura. 40% slow. 150 HP. |
+| <img src="../assets/defenses/ballista-v1.png" width="34" alt=""> Ballista | 100 | Pierce | 3.5–14 m | 90° arc, 15% crit at 2.0×. 220 HP. |
+| <img src="../assets/defenses/cannon-v1.png" width="34" alt=""> Cannon | 125 | Crush | 4.0–12 m | 360° arc, 3.25 m splash, staggers. 220 HP. |
 
 **Minimum range is real.** The Ballista cannot hit anything closer than 3.5 m
 and the Cannon nothing closer than 4.0 m. A tower placed on top of a choke has
@@ -39,17 +52,17 @@ turning.
 
 | Defense | Cost | Channel | Trigger | Notes |
 |---|---:|---|---|---|
-| Tar | 65 | — (tar) | Contact | 40% slow. Drains on contact. 160 HP. |
-| Spikes | 70 | Pierce | Proximity | 55 power, 1.6 s cycle. 130 HP. |
-| Springboard | 90 | Crush | Proximity | Displaces. 2.2 s cycle. 140 HP. |
+| <img src="../assets/defenses/tar-v1.png" width="34" alt=""> Tar | 65 | — (tar) | Contact | 40% slow. Drains on contact. 160 HP. |
+| <img src="../assets/defenses/spikes-v1.png" width="34" alt=""> Spikes | 70 | Pierce | Proximity | 55 power, 1.6 s cycle. 130 HP. |
+| <img src="../assets/defenses/spring-v1.png" width="34" alt=""> Springboard | 90 | Crush | Proximity | Displaces. 2.2 s cycle. 140 HP. |
 
 ## Wall traps
 
 | Defense | Cost | Channel | Trigger | Notes |
 |---|---:|---|---|---|
-| Wall Blades | 105 | Slash | Proximity | 42 power, 1.25 s cycle. 165 HP. |
-| Harpoon | 125 | Pierce | Proximity | 85 power, **50% armour pierce**, 12 m. 150 HP. |
-| Wall Maul | 135 | Crush | Proximity | 105 power, staggers, 3.0 s cycle. 180 HP. |
+| <img src="../assets/defenses/wall_blades-v1.png" width="34" alt=""> Wall Blades | 105 | Slash | Proximity | 42 power, 1.25 s cycle. 165 HP. |
+| <img src="../assets/defenses/harpoon-v1.png" width="34" alt=""> Harpoon | 125 | Pierce | Proximity | 85 power, **50% armour pierce**, 12 m. 150 HP. |
+| <img src="../assets/defenses/wall_maul-v1.png" width="34" alt=""> Wall Maul | 135 | Crush | Proximity | 105 power, staggers, 3.0 s cycle. 180 HP. |
 
 The Wall Maul is the heaviest single hit available and it staggers — which is
 why it is one of the few good answers to a Shieldbearer column, and why it does

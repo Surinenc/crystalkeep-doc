@@ -7,6 +7,17 @@ hold the weak points together when the plan meets the enemy.
 You are the **Warden**: sword, three position-cast spells, and a regenerating
 Ward pool. The keep does the killing. You decide where it kills hardest.
 
+<p align="center">
+<img src="assets/enemies/goblin.png" width="76" alt="Goblin">
+<img src="assets/enemies/runner.png" width="76" alt="Runner">
+<img src="assets/enemies/orc.png" width="76" alt="Orc">
+<img src="assets/enemies/shieldbearer.png" width="76" alt="Shieldbearer">
+<img src="assets/enemies/colossus.png" width="76" alt="Colossus">
+<img src="assets/defenses/ballista-v1.png" width="76" alt="Ballista">
+<img src="assets/defenses/cannon-v1.png" width="76" alt="Cannon">
+<img src="assets/defenses/wall_maul-v1.png" width="76" alt="Wall Maul">
+</p>
+
 ## Start here
 
 - [Getting Started](guides/getting-started.md) — the loop, and three things that will save your first run
