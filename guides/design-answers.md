@@ -51,7 +51,7 @@ every lane is guaranteed affordable, which keeps the turtle a real option
 rather than a fantasy — and **blocking is your verb, not the generator's**. The
 keep offers chokes; you decide which ones become walls.
 
-Seven archetypes, four widths from 126 m to 216 m, and a landmark catalogue of
+Seven archetypes, four widths from 126 m to 180 m, and a landmark catalogue of
 twenty-four keep the shapes from converging. See [Keeps](keeps.md).
 
 ## Gear that eventually eats the game
