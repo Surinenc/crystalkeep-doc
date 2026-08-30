@@ -127,8 +127,26 @@ Enemies that reach a crystal damage it; it has 300 health. When it falls, the
 run ends. Your own death is a respawn timer — 5 seconds in combat, 1.5 outside
 it — and nothing more.
 
-Every keep in normal play has one crystal. The two-crystal Twin Keep is an
-authored fixture, not something a regular run will hand you.
+Most keeps have one crystal. A **Split Bastion** has two, 72 m apart, and
+losing either one ends the run just the same — waves alternate which of them
+they attack. See [Keeps](keeps.md#the-seven-archetypes).
+
+## The crystal ends a wave that will not end
+
+Each combat phase starts a **120-second** countdown, which runs while any enemy
+is alive or still waiting to spawn. The crystal warns you at 60, 30 and 10
+seconds — *"The crystal thrums with gathering power…"* — and at zero it
+annihilates every enemy on the field and empties what was still queued.
+
+This is a failsafe against a wave that cannot finish — a straggler stalled on
+ground it cannot leave, a remnant that cannot path to you — so that nothing
+soft-locks a night. It is priced so it never becomes a tactic: **an enemy the
+purge kills pays nothing at all.** No experience, no bounty, no item roll, no
+kill credit for the defense that had been grinding it down, and no aura
+signature. A wave you hand to the crystal is a wave you were not paid for.
+
+In an ordinary wave you will never see the countdown. If the warnings start
+arriving while you are otherwise winning, something is stuck out there.
 
 ## See also
 
