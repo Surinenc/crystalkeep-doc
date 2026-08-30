@@ -31,16 +31,16 @@ the grid width sets the size of the keep:
 | 7 × 7 | 126 m |
 | 8 × 8 | 144 m |
 | 9 × 9 | 162 m |
-| 12 × 12 | 216 m |
+| 10 × 10 | 180 m |
 
 Width is chosen per seed from the archetype's own range: Broken Causeway and
 High Gallery run 7 or 8, Foundry Channels and Sunken Court are always 8,
 Ringwall runs 8 or 9, the Underkeep is always 9, and the two-crystal Split
-Bastion is always **12 × 12**. The pre-solved set Assault and Endless draw from
-holds fourteen 8 × 8 keeps, six 9 × 9, four 7 × 7 and the four 12 × 12 Split
-Bastions, so in those modes you may be reading anything from a 126 m board to a
-216 m one. The **Weekly generates fresh** and rolls whatever width its archetype
-allows. Doors follow the shape rather than a fixed number:
+Bastion runs **9 or 10**. The pre-solved set Assault and Endless draw from holds
+fourteen 8 × 8 keeps, nine 9 × 9, four 7 × 7 and one 10 × 10, so in those modes
+you may be reading anything from a 126 m board to a 180 m one. The **Weekly
+generates fresh** and rolls whatever width its archetype allows. Doors follow
+the shape rather than a fixed number:
 **2, 3 or 4** gates, selected from the finished topology by which ones open
 ground the others do not. A keep whose second gate would walk the same corridor
 as the first simply does not get one.
