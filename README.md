@@ -40,6 +40,10 @@ Ward pool. The keep does the killing. You decide where it kills hardest.
 - [Game Modes](guides/game-modes.md) — Keep Assault, Endless Siege, Weekly Keep, and Siege Contracts
 - [Co-op](guides/co-op.md) — the two-Warden Twin Siege: room codes, two purses, and auras that compose
 
+## Why it works this way
+
+- [Design answers](guides/design-answers.md) — the genre's recurring failures, and the mechanism that answers each
+
 ## Three rules worth knowing before you play
 
 **A fallen crystal is the only defeat condition.** Your own death is a respawn
