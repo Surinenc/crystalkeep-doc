@@ -21,7 +21,8 @@ yours, and the player learns nothing from the loss.
 **The answer.** Every generated keep is validated against a **versioned
 fairness contract** before it is offered, and a keep that fails any rule is
 discarded and another seed tried. You never see the rejects. The contract is at
-**version 6**, and it is data rather than sentiment:
+**version 6**, and it is data rather than sentiment. The rules that shape what
+you meet:
 
 | | |
 |---|---|

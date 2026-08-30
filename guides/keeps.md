@@ -114,6 +114,7 @@ generator's.
 
 | Rule | Guarantee |
 |---|---|
+| F1 | Every gate has a walkable path that arrives **within 3 m** of the crystal |
 | F2 | The fastest enemy needs **at least 8 s** from any gate to the crystal |
 | F3 | The slowest enemy arrives **within 45 s** |
 | F4 | Lane times differ by **at most 5 s** — fronts arrive together |
@@ -121,6 +122,12 @@ generator's.
 | F6 | No choke is narrower than **2.6 m** — an orc plus margin |
 | F7 | Blockading every lane costs **at most 540 mana** |
 | F8 | The crystal keeps **3.5 m** of clear ground |
+| F9 | Every gate opens onto clear ground — a **3 × 3 m** box, unobstructed |
+
+**F1 and F9 are the rules you will never notice**, and that is their job. They
+do not shape a tactical problem; they refuse keeps that are broken rather than
+hard — a gate that opens into rock, or a route that never reaches the crystal
+at all. The rest of the contract only means something once these two hold.
 
 F7 is the one worth internalising: sealing every lane is always affordable, so
 turtling stays a real option rather than a fantasy. (The four-door ceiling is a
