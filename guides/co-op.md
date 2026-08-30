@@ -62,10 +62,25 @@ A guest cannot start a wave alone. Every request resolves on the host.
 
 ### The Nightmare dial stops at the lower unlock
 
-Only the host turns it, only during the first build phase, and it stops at the
-**lower of the two Wardens' highest unlocked tier**. A veteran cannot drag a
-newcomer into content they have not earned, and a newcomer does not hold a
-veteran to Standard for any tier the newcomer has already cleared.
+Only the host turns it, and only before the first wave. It will not go above
+**the highest tier both of you have unlocked** — and it does not matter which of
+you is hosting:
+
+| Host has cleared | Guest has cleared | The siege runs at |
+|---|---|---|
+| Nightmare 12 | Nightmare 4 | **4 or below** |
+| Nightmare 4 | Nightmare 12 | **4 or below** |
+
+The host holds the dial. The host does not hold the ceiling.
+
+A host already playing above their partner's tier does not have to notice. The
+moment your partner's unlocks arrive the selection drops to the shared ceiling
+by itself and says so — `NIGHTMARE 4 · CAPPED BY YOUR PARTNER'S UNLOCK` — and
+it is checked a second time when you both ready up, so a siege cannot begin
+above it.
+
+Nothing is spent by accepting the cap: neither Warden's own unlocks change, and
+the ceiling rises on its own as the newer Warden clears more.
 
 ## The keep asks for more than twice as much
 
