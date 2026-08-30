@@ -6,14 +6,19 @@ what each surface is for.
 
 ## During a run
 
-**Route ribbons** lie on the ground during the build phase, one per announced
-gate, tracing the path enemies will walk to the crystal. When you place a
-Blockade the ribbons update — that is the fastest way to confirm a reroute
-worked before you commit the rest of your purse.
+**Route ribbons** lie on the ground during the build phase, tracing the paths
+enemies will walk. You are shown **every gate the coming wave uses**, not only
+the one its first front arrives through, and on a two-crystal keep each ribbon
+runs to the crystal that front actually attacks. When you place a Blockade the
+ribbons update — that is the fastest way to confirm a reroute worked before you
+commit the rest of your purse.
+
+Once combat starts the ribbons narrow to the front that is spawning now, so
+what lies on the ground mid-fight is the live lane rather than the whole wave.
 
 **The crystal meter** shows the objective's remaining health — the only number
-that ends the run. There is one of them in normal play; the authored Twin Keep
-fixture shows two, and either one reaching zero ends it.
+that ends the run. A Split Bastion shows two, one for each crystal, and either
+one reaching zero ends it.
 
 **The wave strip** names what is coming next and how many lanes it arrives on.
 
@@ -37,8 +42,11 @@ dead-zone preview rotate with you, before any mana is committed.
 
 ## The tactical map
 
-**Tab** shows the whole keep at once — routes, gates, defenses, landmarks, and
-which fronts attack next. It stays live: combat continues while it is open.
+**Tab** shows the whole keep at once — routes, gates, defenses, landmarks,
+**drops** drawn as an arrow from the lip enemies leave to the ground they land
+on, and which fronts attack next. Its header carries the wave, the phase, and
+your Nightmare tier as `· N12` whenever you are above Standard. It stays live:
+combat continues while it is open.
 
 It also tracks the loot lying on the field — `LOOT ON FIELD · n CLAIMED /
 m REMAIN` — because items are never picked up automatically and it is easy to
