@@ -31,18 +31,32 @@ the grid width sets the size of the keep:
 | 7 × 7 | 126 m |
 | 8 × 8 | 144 m |
 | 9 × 9 | 162 m |
+| 12 × 12 | 216 m |
 
-Width is chosen per seed. The pre-solved set Assault and Endless draw from is
-mostly **8 × 8** with a handful of 7 × 7 — no 9 × 9 is among them, so in those
-modes you are reading a 126 m or 144 m board. The **Weekly can roll any of the
-three**, because it generates fresh. Doors follow the shape rather than a fixed
-number:
+Width is chosen per seed from the archetype's own range: Broken Causeway and
+High Gallery run 7 or 8, Foundry Channels and Sunken Court are always 8,
+Ringwall runs 8 or 9, the Underkeep is always 9, and the two-crystal Split
+Bastion is always **12 × 12**. The pre-solved set Assault and Endless draw from
+holds fourteen 8 × 8 keeps, six 9 × 9, four 7 × 7 and the four 12 × 12 Split
+Bastions, so in those modes you may be reading anything from a 126 m board to a
+216 m one. The **Weekly generates fresh** and rolls whatever width its archetype
+allows. Doors follow the shape rather than a fixed number:
 **2, 3 or 4** gates, selected from the finished topology by which ones open
 ground the others do not. A keep whose second gate would walk the same corridor
 as the first simply does not get one.
 
-The crystal sits at the centre, and its surrounding sanctuary is protected
-ground you cannot build on.
+The crystal sits at the centre — or, on a Split Bastion, two crystals sit
+**72 m** apart on either side of it — and the sanctuary around each is
+protected ground you cannot build on.
+
+**The ground is stacked.** A keep rises in bands, each a full storey of
+**4 m**, joined by ramps. Where a band edge is open the generator may cut a
+**drop**: a gap in the wall line where enemies step off the upper band onto the
+lower one and cannot climb back. A keep carries at most two, spaced apart and
+never next to a crystal, and the fairness contract times routes through them
+like any other ground. Twenty of the twenty-eight pre-solved keeps have one.
+Read the lip, not the landing: a drop is a route that does not show as a
+corridor.
 
 **Door count is a timing statement, not a volume one.** A wave is always four
 packets, dealt round-robin across the gates — so a two-door keep sends two
@@ -51,7 +65,7 @@ one per gate. The same enemies arrive either way. What changes is whether you
 get a second beat to react in. Read a four-door keep as *less time*, not *more
 enemies*. See [Waves](waves.md#waves-arrive-as-squads-not-as-a-crowd).
 
-## The six archetypes
+## The seven archetypes
 
 Every generated keep belongs to an **archetype**, named on the level line
 alongside its own title — *Foundry Channels · Ashen Run*, *Ringwall · Golden
@@ -63,22 +77,31 @@ carry.
 |---|---|---|
 | **Foundry Channels** | Parallel channels split and reconverge — cover moving fronts, not one splash choke | Oil Channel, Foundry Crucible Pool, Wind Vent, Powder Magazine |
 | **Broken Causeway** | Exposed spans can change route — keep alternate coverage ready between waves | Counterweight Bridge, Collapsing Aqueduct, Chain Anchor, Sealed Breach Gate |
-| **Split Bastion** | Two defensible halves share short rotations — spend mana where pressure commits | Iron Portcullis, Watch Gallery, Stoneward Shrine, Sealed Breach Gate |
+| **Split Bastion** | Two crystals anchor two districts — hold one side with what you built, be at the other | Iron Portcullis, Watch Gallery, Stoneward Shrine, Sealed Breach Gate |
 | **Sunken Court** | A low basin and an upper rim compete for control — preserve a safe vertical rotation | Floodgate Cistern, Rime Basin, Execution Pit, Collapsing Aqueduct |
 | **High Gallery** | Overlooks grant range but hide the lower approaches — defend both elevation bands | Siege Lift, Fallen Bell Tower, Watch Gallery, Signal Brazier |
 | **Ringwall** | Several spokes feed one oath court — rotate and overlap rather than overcommit | Oath Plaza, War Horn Rostrum, Rune Pylon, Iron Portcullis |
+| **The Underkeep** | Three tiers of ground — surrendering a band is a decision, not a defeat | Descent Gate, Echo Well, Root Bridge, Buried Shrine |
 
 **Only three archetypes can change their own routes mid-run.** Broken Causeway
 is built for it — three of its four landmarks are route-changers — while Sunken
-Court and Split Bastion carry one each. On **Foundry Channels, High Gallery and
-Ringwall the routes you read in the first build phase are the routes for the
-whole siege**, so a placement there is a commitment you will not be asked to
-revisit.
+Court and Split Bastion carry one each. On **Foundry Channels, High Gallery,
+Ringwall and the Underkeep the routes you read in the first build phase are the
+routes for the whole siege**, so a placement there is a commitment you will not
+be asked to revisit.
+
+**The Split Bastion is the two-crystal keep.** Its crystals stand 72 m apart,
+west and east or north and south by seed, and losing either one ends the run.
+Wave 1 attacks one crystal, wave 2 the other, and from wave 3 the fronts within
+a wave alternate between them. An attack on a crystal comes from the **two
+gates nearest that crystal**, so pressure arrives through the local corridors
+rather than crossing the keep. The briefing is literal: build to hold one side,
+and be at the other.
 
 That is the single most useful thing the archetype name tells you. Read
 *Broken Causeway* and hold mana back; read *Ringwall* and spend it.
 
-All six appear in the pre-solved set, four keeps each.
+All seven appear in the pre-solved set, four keeps each — twenty-eight in all.
 
 ## The fairness contract
 
@@ -87,7 +110,7 @@ offered. This is the promise that randomness is not noise: a keep you have
 never seen is still winnable, and losing is your fault rather than the
 generator's.
 
-**Contract version 5.** The rules that shape what you will meet:
+**Contract version 6.** The rules that shape what you will meet:
 
 | Rule | Guarantee |
 |---|---|
@@ -104,6 +127,13 @@ turtling stays a real option rather than a fantasy. (The four-door ceiling is a
 separate, deliberate cap in the generator — `DOORS_MAX := 4` — not something F7
 produces on its own.)
 
+Version 6 changed how the rules are measured, not the numbers. Route times are
+taken over the finished navigation graph, **drops included**, so a one-way
+shortcut counts against F2 and F3 like any corridor. On a two-crystal keep each
+gate is timed against its **nearer** crystal, F4 is checked within each
+crystal's own group of gates rather than across the whole keep, and F8 is
+checked at every crystal.
+
 A keep that fails any rule is discarded and another seed is tried. You never
 see the rejects.
 
@@ -113,9 +143,10 @@ Before the first wave, spend the build phase looking:
 
 - **The level line** names the archetype. That is your first read, and it is
   free — it tells you whether the routes can change on you.
-- **Route ribbons** on the ground show each gate's path to the crystal.
+- **Route ribbons** on the ground show every path the coming wave will walk —
+  each gate to the crystal it attacks.
 - The **tactical map** (Tab) shows the whole keep at once, including which
-  gates attack next.
+  gates attack next and, as an arrow from lip to landing, every **drop**.
 - **Chokes** are where lanes narrow. F5 guarantees each lane has one.
 
 The question a keep asks is always the same: where does traffic have to pass,
@@ -123,19 +154,20 @@ and what do I want waiting there?
 
 ## Landmarks that change the ground
 
-**Every generated keep carries at least one landmark**, and roughly **45%**
-carry a second. They are not a rare flourish — assume one is present and go
-find it.
+**Every generated keep carries at least one landmark**, and just over half —
+**15 of the 28** pre-solved keeps — carry a second. They are not a rare
+flourish — assume one is present and go find it.
 
-The catalogue holds **twenty**, and which ones a keep can draw depends on its
-archetype, so a foundry keep and a rime keep offer different furniture. Fifteen
-of the twenty appear across the shipped set:
+The catalogue holds **twenty-four**, and which ones a keep can draw depends on
+its archetype, so a foundry keep and a rime keep offer different furniture. All
+twenty-four appear across the shipped set:
 
 | Landmark | Charges | Radius |
 |---|---:|---:|
 | Iron Portcullis | 2 | 14 m |
 | Collapsing Aqueduct | 1 | 22 m |
 | Sealed Breach Gate | 1 | 18 m |
+| Counterweight Bridge | 2 | 16 m |
 | Siege Lift | 2 | 12 m |
 | War Horn Rostrum | 2 | 16 m |
 | Wind Vent | 2 | 12 m |
@@ -144,7 +176,9 @@ of the twenty appear across the shipped set:
 | Powder Magazine | 1 | 11 m |
 | Chain Anchor | 2 | 10 m |
 | Stoneward Shrine | 2 | 10 m |
-| Watch Gallery, Rime Basin, Fallen Bell Tower, Oath Plaza | — | — |
+| Signal Brazier | 2 | 12 m |
+| Rune Pylon | 2 | 7 m |
+| Watch Gallery, Rime Basin, Fallen Bell Tower, Oath Plaza, Foundry Crucible Pool, Execution Pit, Descent Gate, Echo Well, Root Bridge, Buried Shrine | — | — |
 
 The last row is different in kind: those have **no charges and no radius**. They
 are terrain and cover — ground that shapes a fight without being operated.
@@ -203,11 +237,9 @@ their file names — bastion is `verticality`, caldera is `hazard` — which is
 visible because Endless records are filed by archetype. And they carry no
 sanctuary data, so the crystal's no-build zone does not apply on them.
 
-**`twin_keep` is the only keep in the game with two crystals**, West and East,
-30 m apart, either one of which ends the run when it falls. The generator emits
-no `crystals` block at all, so every keep you can actually reach in normal play
-defends a single crystal at the centre. The two-crystal siege is not part of the
-shipped run.
+`twin_keep` has two crystals, West and East, 30 m apart on flat ground — the
+hand-built ancestor of the Split Bastion. The two-crystal siege you meet in
+normal play is the generated Split Bastion described above, not this fixture.
 
 ## Seeds
 
