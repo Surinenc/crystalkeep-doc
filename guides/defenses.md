@@ -27,9 +27,12 @@ is treated as "you already know this" and hands you all ten at once, while
 finishing it hands you five. If you skip, you get the whole toolbox and none of
 the teaching.
 
-**Only Keep Assault clears count.** Weekly runs are normalized and do not
-record a clear, and Endless has no clear to record — so the last five defenses
-come from winning the campaign twice, and nothing else advances them.
+**Only Keep Assault clears count — and a co-op clear is one of them.** Weekly
+runs are normalized and do not record a clear, and Endless has no clear to
+record, so the last five defenses come from winning the campaign twice. A
+[co-op](co-op.md) clear advances that pair exactly as a solo one does: it is
+filed in your co-op record rather than your solo one, but the unlock ladder
+reads the two added together.
 
 ## The three schools
 

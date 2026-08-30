@@ -43,9 +43,22 @@ that starts the **next wave**. Agreeing to play is not agreeing to fight.
 Readiness clears itself after the siege opens, so nobody starts wave 1 merely
 by having joined.
 
-If a wave does not start when you both believe you are ready, press ready
-again. The message that says so can be lost, and pressing it again re-announces
-your state rather than doing nothing.
+Once you are in the siege, **G is the ready key rather than the start key**. It
+marks you ready and names who you are waiting for:
+
+| The line you get | Means |
+|---|---|
+| `READY · WAITING FOR YOUR PARTNER` | You readied; the other Warden has not |
+| `READY · WAITING FOR THE HOST` | You are the guest, and you have readied |
+| `BOTH WARDENS READY` | The wave begins |
+
+**G only ever readies you — it never un-readies you.** Pressing it again
+re-announces your state, which is also the cure if a wave does not start when
+you both believe you are ready: a message can be lost, and saying it twice
+costs nothing. To genuinely withdraw a ready, use the lobby's **READY** button,
+which does toggle both ways.
+
+A guest cannot start a wave alone. Every request resolves on the host.
 
 ### The Nightmare dial stops at the lower unlock
 
@@ -60,6 +73,11 @@ A two-player wave is expanded to **1.8×** the size of the same wave solo,
 rounded up, and its fronts are dealt alternately to the two crystals. You do
 not get a lane each and a quiet half — you get close to twice the enemies, split
 across two objectives that both have to hold.
+
+The wave strip tells you before it arrives: **`×2 FORCES · BOTH FRONTS`**, and
+every event on it is tagged `· WEST + EAST` instead of naming one crystal, the
+way a solo twin keep names the one it is coming for. Read the `×2` as the
+shorthand it is — the real expansion is 1.8×.
 
 Either crystal falling ends the run for both of you. There is no half-loss.
 
@@ -160,6 +178,9 @@ aiming at and names itself:
 You get **three pings every four seconds**. It is a pointing finger, not a
 chat, and the limit is what keeps it readable.
 
+A ping on a lane also surfaces on the wave strip as `PARTNER PING · LANE n`, so
+it reaches you even when you are not looking at the ground your partner marked.
+
 **Salute** with **H**. It does nothing tactical; within 12 m your partner sees
 a spark. It is there because a siege that goes well deserves acknowledging.
 
@@ -206,12 +227,16 @@ Co-op adds five:
 | **V** | Buy back your own respawn while down |
 | **P** / middle mouse | Contextual ping |
 | **H** | Salute |
-| **G** | Approve a partner's request to sell your defense |
+| **G** | Ready up for the next wave — or approve a pending sell request |
 
 **T** is one key doing three jobs and it resolves them in order: reviving a
 fallen partner first, gifting to a standing one second, and the ordinary
 landmark or loot interaction last. You cannot accidentally operate a landmark
 while standing over your partner's body.
+
+**G** is likewise doubled, and a waiting sell request wins. If your partner has
+asked to sell something of yours, the next G approves it rather than readying
+you — so read the prompt before pressing on through it.
 
 ## See also
 
