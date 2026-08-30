@@ -60,7 +60,10 @@ your damage scales with how many bodies are pressed together in front of you.
 Slash is the wrong channel against orcs (0.55×) and bombardiers (0.70×), and
 the right one against goblins (1.25×) and crossbowmen (1.25×).
 
-Sword damage is a base too — `hero_power` on your equipment multiplies it.
+Sword damage is a base too, and it rides **the same curve your towers ride**:
+**Defense Power** multiplies it, at the same coefficient. There is no separate
+weapon-damage rating to chase — the line that arms your keep arms you with it,
+and the sword is pegged to be worth roughly one mid-tier tower.
 
 ## The three spells
 
@@ -141,6 +144,74 @@ new targets is worth more than stacking them on one.
 Note the two enemies that care most: a Frostbound takes **1.50×** from fire,
 and a Fire Demon takes **zero** — from the impact *and* the burn. Fireball is a
 specialist answer, not a general one.
+
+## The Commander aura
+
+You carry a ring with you, and defenses inside it **bond** to you. A bonded
+defense gains a standing bonus for as long as you hold that ground. This is the
+mechanic behind the job description: being where the keep is weakest is worth
+something concrete.
+
+The ring is **6 m** on the ground around you, drawn during build and combat and
+tinted by your family. It is deliberately smaller than a Ballista's reach — a
+tight cluster at one choke bonds when you stand in it, and two adjacent chokes
+are mutually exclusive. You are not meant to be able to hold the whole keep.
+
+**A bond is earned, then held on a short lease.**
+
+| | |
+|---|---:|
+| Warm-up inside the ring | 4.0 s |
+| Floor on that warm-up | 1.5 s |
+| Lease after you step out | 4.0 s |
+| Decay outside the ring | 2× the fill rate |
+
+Stepping away for two seconds costs four seconds of progress, and going down
+drops **every** bond at once — after respawning you earn each one again from
+zero. The aura pays you for standing somewhere and meaning it.
+
+### The family is your relic
+
+Which bonus the ring grants is decided by the **relic you have equipped**, and
+by nothing else. There are four families and a relic carries exactly one; its
+tooltip names it on a line reading `COMMANDER AURA · TEMPO`.
+
+| Family | A bonded defense gains | On a kill it credits |
+|---|---|---|
+| **Tempo** | Fires and resets faster | An attuned **wall trap** resets instantly |
+| **Precision** | Added critical chance on towers | Ballista bolts **pierce one more enemy** |
+| **Bulwark** | Takes less damage, and regenerates **1% of its maximum health per second** | — |
+| **Winter** | Chill from an attuned Frost Rune bites harder | Spreads chill for 2.2 s within **3 m** |
+
+**With no relic equipped the aura still runs, at half power and with no
+signature.** The standing bonus is free; the kill effect is what the relic slot
+buys.
+
+### What the bonus is worth
+
+All four families read one rating — **Aura Power** — through the same
+logarithmic curve as everything else, starting from a **baseline of 40** you
+have before any equipment at all. Your rating is that 40 plus whatever Aura
+Power your gear and allocation supply:
+
+| Family | Rating 40 (no gear) | Rating 100 | Rating 240 |
+|---|---|---|---|
+| Tempo | ×1.20 rate | ×1.42 | ×1.73 |
+| Precision | +4.7% crit | +8.7% | +13.1% |
+| Bulwark | 14% less damage taken | 26% | 38% |
+| Winter | ×1.13 chill potency | ×1.28 | ×1.49 |
+
+Two more stats shape the ring rather than the bonus: **Aura Reach** widens the
+6 m, and **Attunement Speed** shortens the 4 s warm-up — which will not go
+below 1.5 s however much of it you stack. See
+[Progression](progression.md#what-the-stats-do).
+
+A bonded defense says so: a pillar of light in the family's colour and a ring
+at its base. If you cannot see the mark, the bond is not there.
+
+**The counter laws are aura-proof.** Winter makes chill stronger, not
+universal. An immune enemy is still immune and a hard zero is still zero. The
+aura changes how well your defenses do their job, never which jobs they can do.
 
 ## Counterplay pays Ward
 
