@@ -64,6 +64,13 @@ the target**. Traverse speed therefore matters: the Ballista swings at 120°/s,
 the Cannon at 60°/s. A Cannon covering a fast lane spends much of the wave
 turning.
 
+**Cannons carry further downhill.** A Cannon adds **1 m of range for every
+metre it stands above its target**, capped at **+25%** — so a 12 m Cannon
+reaches 15 m from a high enough perch. Nothing else gains this: a flat
+trajectory has no height dividend, so the Ballista's reach is the same uphill
+or down. While you are placing, the ghost draws the bonus as an amber ring and
+hides it on flat ground, so the elevation is priced before you commit.
+
 ## Floor traps
 
 | Defense | Cost | Channel | Trigger | Notes |
@@ -76,9 +83,9 @@ turning.
 
 | Defense | Cost | Channel | Trigger | Notes |
 |---|---:|---|---|---|
-| <img src="../assets/defenses/wall_blades-v1.png" width="34" alt=""> Wall Blades | 105 | Slash | Proximity | 42 power, 1.25 s cycle. 165 HP. |
-| <img src="../assets/defenses/harpoon-v1.png" width="34" alt=""> Harpoon | 125 | Pierce | Proximity | 85 power, **50% armour pierce**, 12 m. 150 HP. |
-| <img src="../assets/defenses/wall_maul-v1.png" width="34" alt=""> Wall Maul | 135 | Crush | Proximity | 105 power, staggers, 3.0 s cycle. 180 HP. |
+| <img src="../assets/defenses/wall_blades-v1.png" width="34" alt=""> Wall Blades | 105 | Slash | Proximity | 63 power, 1.25 s cycle. 165 HP. |
+| <img src="../assets/defenses/harpoon-v1.png" width="34" alt=""> Harpoon | 125 | Pierce | Proximity | 128 power, **50% armour pierce**, 12 m. 150 HP. |
+| <img src="../assets/defenses/wall_maul-v1.png" width="34" alt=""> Wall Maul | 135 | Crush | Proximity | 158 power, staggers, 3.0 s cycle. 180 HP. |
 
 The Wall Maul is the heaviest single hit available and it staggers — which is
 why it is one of the few good answers to a Shieldbearer column, and why it does
@@ -87,11 +94,31 @@ nothing useful against a runner it cannot catch.
 ## What towers shoot at
 
 A targeted defense picks the **nearest** enemy inside its envelope — within
-range, outside minimum range, and inside its firing arc.
+range, outside minimum range, and inside its firing arc. Two corrections are
+applied before that choice.
 
-The one exception is the Warden's mark. If an enemy in the envelope carries a
-**Hex** mark, the tower takes that one instead, nearest-first among marked
-targets. That is the whole mechanism behind Hex as a command: you are not
+**A tower will not spend a shot on something it cannot hurt.** An enemy the
+tower's channel reads as a hard zero is skipped outright: a Ballista does not
+aim into a Shieldbearer's front, and a Cannon does not aim at a Fire Demon. It
+services another target instead. This does not soften the counter law — it
+means the missing counter is yours to bring, rather than something a tower will
+waste itself against while the lane walks past.
+
+**Ballistas and Cannons prefer their own counters.** Each weights certain roles
+ahead of raw distance:
+
+| Tower | Serviced first | Left for last |
+|---|---|---|
+| **Ballista** | Fire Demon, then Bombardier and Sapper, then Runner | Shieldbearer, Orc |
+| **Cannon** | Shieldbearer and Orc, then Crossbowman and Goblin | Runner |
+
+The weighting outranks distance within the envelope, so a Ballista will leave a
+closer orc alone to answer the sapper behind it. Damage, range, rate and
+immunity are untouched — only the order of service changes.
+
+The Warden's mark overrides both. If an enemy in the envelope carries a **Hex**
+mark, the tower takes that one instead — by the same reckoning if several are
+marked. That is the whole mechanism behind Hex as a command: you are not
 buffing the tower, you are choosing its target.
 
 ## Traps wear out
@@ -120,6 +147,11 @@ A ghost shows where the defense will land. It refuses for concrete reasons:
 
 - **Surface mismatch.** Floor defenses need a near-level surface; wall traps
   need a near-vertical one. The preview will not lie to you about this.
+- **Flat ground, for Blockades only.** Floor traps keep the slope allowance and
+  will sit on a ramp; the Blockade demands ground that is genuinely level. It
+  works by carving the navigation mesh that the detour-versus-breach decision
+  is read from, and on the 12.5° ramp of a 4 m storey that carve means nothing.
+  If a ghost refuses on a slope where a trap was accepted, this is why.
 - **Distance.** You must be within **14 m** of the spot.
 - **Overlap.** The footprint must be clear of world, enemies, other defenses
   and the crystal.
@@ -219,5 +251,6 @@ upgrades nothing. Use the wheel.
 
 - [Combat](combat.md) — channels, immunities, and what each enemy refuses
 - [Economy](economy.md) — mana income, bounties, and refunds
+- [The Warden](warden.md#the-commander-aura) — the aura that bonds to what you built
 - [Keeps](keeps.md) — the ground you are building on
 - [Siege Doctrines](doctrines.md) — free Masterwork mechanics, twice a run
