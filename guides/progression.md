@@ -60,7 +60,7 @@ Points go into eight ratings, and it is a real allocation decision:
 
 | Warden | Defense |
 |---|---|
-| Warden Power | Defense Power |
+| Aura Power | Defense Power |
 | Warden Vitality | Defense Fortitude |
 | Ward Capacity | Defense Rate |
 | Ward Regeneration | Defense Reach |
@@ -92,8 +92,23 @@ has few strong ones. Neither strictly dominates.
 
 ## What the stats do
 
-Warden stats: **Warden Power** (weapon and spell damage), **Warden Vitality**
-(maximum health), **Ward Capacity**, **Ward Regeneration**.
+Warden stats: **Aura Power** (the strength of your Commander aura), **Aura
+Reach** (its radius), **Attunement Speed** (how fast defenses bond to you),
+**Warden Vitality** (maximum health), **Ward Capacity**, **Ward Regeneration**.
+
+**There is no weapon-damage stat.** Your sword scales on **Defense Power**,
+the same rating your towers use — see [The Warden](warden.md#the-sword). The
+old Warden Power affix has been **retired**: it no longer rolls on new items,
+and any of it you already carry — on gear, from set bonuses, from a unique —
+is folded into Aura Power, which is what the ledger shows. Nothing is lost in
+the change.
+
+**Relics carry an aura family.** A relic rolls one of Tempo, Precision,
+Bulwark or Winter, and that is what decides which bonus your aura grants;
+the tooltip reads `COMMANDER AURA · TEMPO`. A relic from before the change
+keeps a stable identity rather than rerolling — a Clockwork Reset relic reads
+as Tempo, a Hunter's Windlass as Precision, and anything else as Tempo. With
+no relic equipped the aura runs at half power and grants no kill signature.
 
 Defense stats: **Defense Power**, **Defense Fortitude**, **Defense Rate**,
 **Defense Reach**, plus specific ones — Blockade Health, Ballista Traverse,
@@ -124,7 +139,7 @@ rather than a cosmetic sort:
 | Preference | Biases rolls toward |
 |---|---|
 | **Mixed** | No bias — the default |
-| **Warden** | Warden Power, Vitality, Ward stats |
+| **Warden** | Aura stats, Vitality, Ward stats |
 | **Fortification** | Blockade and tower stats |
 | **Floor trap** | Floor-trap stats |
 | **Wall trap** | Wall-trap stats |
@@ -147,10 +162,10 @@ Warden's Oath, as an example of the shape:
 
 | Pieces | Bonus | Grants |
 |---:|---|---|
-| 2 | OATHBOUND EDGE | Warden Power |
+| 2 | OATHBOUND EDGE | Aura Power |
 | 4 | UNBROKEN BEARER | Warden Vitality |
 | 6 | WARDEN'S AEGIS | Ward Capacity and Regeneration |
-| 8 | KEEP'S CHAMPION | Warden Power and Ward Capacity |
+| 8 | KEEP'S CHAMPION | Aura Power and Ward Capacity |
 
 ### Set bonuses scale with resonance — and resonance is an average
 
@@ -167,8 +182,11 @@ So the real question is never "do I have four pieces". It is "do I have four
 pieces of comparable level". A tight four-piece set at high level beats a
 ragged six-piece set carrying a levelling relic.
 
-Sixteen uniques carry named attributes rather than rolled stats, and are their
-own reason to build around.
+Eight uniques — one for each slot — carry a named attribute rather than rolled
+stats, and are their own reason to build around. The attribute is usually a
+conversion: The Last Warden's RECIPROCAL ARSENAL makes your Defense Power count
+as Aura Power as well, so the rating that arms the keep also widens what your
+presence does to it.
 
 ## See also
 
