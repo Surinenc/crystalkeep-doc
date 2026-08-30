@@ -153,3 +153,4 @@ and ignores it entirely.
 - [Nightmare](nightmare.md) — the ladder Keep Assault unlocks
 - [Waves](waves.md) — the five-wave shape
 - [Progression](progression.md) — the power that Weekly normalizes away
+- [Co-op](co-op.md) — the two-Warden Twin Siege, reached from its own menu entry

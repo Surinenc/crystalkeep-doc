@@ -38,6 +38,7 @@ Ward pool. The keep does the killing. You decide where it kills hardest.
 - [Nightmare](guides/nightmare.md) — the uncapped ladder, and why both sides grow on the same curve
 - [Workshop](guides/workshop.md) — materials, modification, sealing, and salvage
 - [Game Modes](guides/game-modes.md) — Keep Assault, Endless Siege, Weekly Keep, and Siege Contracts
+- [Co-op](guides/co-op.md) — the two-Warden Twin Siege: room codes, two purses, and auras that compose
 
 ## Three rules worth knowing before you play
 

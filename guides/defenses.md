@@ -232,7 +232,9 @@ cooldown entirely and the defense fires at once. That turns your heal into an
 on-demand trigger, and it is the strongest reason to take one key defense to
 T3 rather than two to T2. See [The Warden](warden.md#mending-ward--30-ward-04-s-windup-14-m).
 
-Selling returns **60%** of everything invested — including upgrades.
+Selling returns **60%** of everything invested — including upgrades. In
+[co-op](co-op.md#two-purses-one-keep) it returns **100%**, to the owner's purse
+rather than the seller's.
 
 There are two ways to sell: press **X** while aiming at a defense, or open the
 build wheel while aiming at one and choose the sell segment.

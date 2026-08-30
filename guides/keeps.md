@@ -224,13 +224,14 @@ content.** They are fixtures: the test bot needs ground that holds still, and
 reproducing a bug needs a map that is the same tomorrow. A regular run always
 loads a generated keep.
 
-They are reachable only with `--keep <name>` or from the dev console. No menu
-offers them, and restarting or switching modes carries your **current** keep
-forward rather than selecting a different one.
+Most are reachable only with `--keep <name>` or from the dev console, and
+restarting or switching modes carries your **current** keep forward rather than
+selecting a different one.
 
 `fortress` (the test default), `plaza`, `sprawl`, `caldera`, `bastion`,
-`twin_keep`, and `initiation` — which backs the Initiation tutorial and is the
-only one of the seven a player meets, through the Tutorial entry.
+`twin_keep`, and `initiation`. Two of the seven a player does meet: `initiation`
+backs the Initiation tutorial, and `twin_keep` is what the **CO-OP** entry loads
+when you open it from a keep with only one crystal.
 
 Two details matter if you ever load one. Their archetype ids do not always match
 their file names — bastion is `verticality`, caldera is `hazard` — which is
@@ -238,8 +239,9 @@ visible because Endless records are filed by archetype. And they carry no
 sanctuary data, so the crystal's no-build zone does not apply on them.
 
 `twin_keep` has two crystals, West and East, 30 m apart on flat ground — the
-hand-built ancestor of the Split Bastion. The two-crystal siege you meet in
-normal play is the generated Split Bastion described above, not this fixture.
+hand-built ancestor of the Split Bastion, and the ground most
+[co-op](co-op.md) sieges are fought on. In a solo run the two-crystal keep you
+meet is the generated Split Bastion described above, not this fixture.
 
 ## Seeds
 

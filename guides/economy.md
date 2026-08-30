@@ -69,6 +69,11 @@ than a punishment.
 
 Press **X** while aiming at a defense, or use the build wheel's sell segment.
 
+**[Co-op](co-op.md#two-purses-one-keep) refunds all of it.** A sold defense
+returns 100% of its investment there, into the owner's purse rather than the
+seller's, so that two people committing to one board can undo each other's
+work without either of them paying for the disagreement.
+
 ## What to spend on
 
 The wave debrief reports **damage per mana** for every placement. That number

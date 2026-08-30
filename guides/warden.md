@@ -257,3 +257,4 @@ Ward's cap keeps it from becoming an economy.
 - [Combat](combat.md) — channels, immunities, and what each enemy refuses
 - [Defenses](defenses.md) — what your Hex is amplifying
 - [Progression](progression.md) — how equipment changes the Warden
+- [Co-op](co-op.md) — a second Warden, and how two auras compose
