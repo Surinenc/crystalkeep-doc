@@ -57,11 +57,11 @@ A deterministic weekly map with **normalized** Warden and defense ratings —
 persistent power does not apply.
 
 The Weekly is also the only mode that **runs the generator live**, from a seed
-derived from the week itself. Keep Assault and Endless draw from a set of keeps
-solved ahead of time; the Weekly builds one on the spot, so it is the only mode
-that can hand you ground outside that set — including a 9 × 9 board, which the
-pre-solved set does not contain. Everyone plays the same keep at the same
-power, and your best local score is kept for the week.
+derived from the week itself. Keep Assault and Endless draw from a set of
+twenty-eight keeps solved ahead of time; the Weekly builds one on the spot, so
+it is the only mode whose ground is not in that set at all — a keep that exists
+for one week and is then gone. Everyone plays the same keep at the same power,
+and your best local score is kept for the week.
 
 **Weekly forces Nightmare to 0** regardless of the tier you have unlocked. Both
 your gear and the difficulty are pinned, because a Weekly is one shared
