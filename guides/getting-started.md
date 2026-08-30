@@ -10,8 +10,10 @@ together while the plan survives contact.
    tactical map (**Tab**) shows the whole thing at once.
 2. **Build.** Spend mana on defenses. Mana is the only construction resource.
 3. **Start the wave** with **G**. The game never starts one for you.
-4. **Fight.** Hold the weak point, amplify your towers, intervene where the
-   plan is failing.
+4. **Fight.** Hold the weak point and intervene where the plan is failing.
+   Standing among your own defenses bonds them to your
+   [Commander aura](warden.md#the-commander-aura), which makes them
+   measurably better for as long as you hold that ground.
 5. **Read the debrief.** Find out which placements earned their cost.
 6. **Repeat**, five times. After waves 2 and 4 you also pick a
    [Siege Doctrine](doctrines.md) — a free, run-long upgrade.
@@ -22,9 +24,9 @@ together while the plan survives contact.
 timer — 5 seconds during combat, 1.5 outside it. Spend yourself on the lane
 that matters.
 
-Every keep you will actually play defends **one** crystal, with 300 health.
-(A [development fixture](keeps.md#development-fixtures) defends two, but no
-normal run loads it.)
+Most keeps defend **one** crystal, with 300 health. A
+[Split Bastion](keeps.md#the-seven-archetypes) defends **two**, on opposite
+sides of the board, and losing either one ends the run.
 
 **Some matchups deal exactly zero.** A Ballista deals nothing through a
 Shieldbearer's front. A Cannon deals nothing to a Fire Demon. When you see
