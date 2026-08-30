@@ -99,7 +99,7 @@ whoever pressed the button, and the debrief records who invested what.
 
 | Act | Rule |
 |---|---|
-| **Build** | Anywhere on the keep, from your own purse. The defense is yours |
+| **Build** | Anywhere on the keep, from your own purse. The defense is yours, and it uses your gear |
 | **Upgrade** | **Anyone may upgrade anything.** The investor pays; the owner does not change |
 | **Repair** | Free, as in solo, and either of you may do it |
 | **Sell** | Needs the **owner's consent** if it is not yours |
@@ -113,6 +113,27 @@ committing to one board will disagree about where the board should be.
 A sell request on your partner's defense opens a prompt on their screen for
 **5 seconds**. They press **G** to approve. Silence declines it — the request
 times out rather than passing by default.
+
+### A defense keeps its builder's gear
+
+**The Warden who places a defense is the Warden whose equipment it runs on.**
+At the moment of placement it takes a snapshot of that builder's defense
+ratings — Power, Fortitude, Rate, Reach and the school-specific ones — and
+computes its stats from that snapshot for the rest of the run.
+
+**Upgrading does not re-stat it.** If your partner builds a Ballista and you
+take it to Masterwork, it is still their Defense Power behind every bolt. You
+bought the tier, not the gear under it.
+
+That makes the division of labour a real decision rather than a matter of
+taste: **the better-equipped Warden should place, and the other should fund
+them**. Gifting exists so that the purse and the gear do not have to belong to
+the same person. Two Wardens of comparable gear can ignore all of this and
+build wherever they are standing.
+
+Only **fourteen derived ratings** cross the wire — the defense numbers above,
+and nothing else. No items, no rolls, no inventory, no profile. Your partner's
+game is told what your gear *does*, never what it is.
 
 ### Handing over mana
 
