@@ -1,7 +1,7 @@
 # Enemies
 
-Ten enemy roles. Each has a channel it fears, a channel it shrugs off, and — in
-several cases — something it is flatly immune to. Reading this table is
+Eleven enemy roles. Each has a channel it fears, a channel it shrugs off, and —
+in several cases — something it is flatly immune to. Reading this table is
 cheaper than losing a wave to it.
 
 Speed is metres per second and does not change with Nightmare. Health and
@@ -64,6 +64,46 @@ Warden, a Ballista, or a Wall Maul.
 pierce and 1.20× from slash, resists crush (0.80×). Left alone it will
 dismantle the lane you paid for. Intercept it.
 
+### Unbound — 90 HP, 1.45 m/s, 0 damage, 60 mana
+
+It never attacks. It carries no weapon and deals nothing to you, your defenses
+or the crystal, and it walks at a Colossus's pace. It is still the most
+dangerous body in the wave, because of what everything standing near it gains.
+
+Its aura reaches **6 m** — the same radius as your own Commander aura, and for
+the same reason: it must not be able to cover two chokes at once.
+
+**Its level rises on its own clock.** Every **6 seconds** it pulses and gains a
+stack, whether or not anything is in range and whether or not you are near it.
+Its age is the threat, so a caster you ignored for a minute is not the caster
+that walked in. Each level keeps every level beneath it:
+
+| Level | What nearby enemies gain |
+|---:|---|
+| 1 | Immunity to **stagger** |
+| 2 | Immunity to **tar** |
+| 3 | Immunity to **displacement** |
+| 4 | Immunity to **chill** |
+| 5 | Regeneration — 1.5% of maximum health per second |
+| 6 | **×1.25 damage** |
+| 7 | Attack cooldowns **cut by 23%** |
+| 8 | **20% less damage taken** |
+
+Stagger goes first on purpose: the clock opens by taking your own instrument
+away before the expensive answers are needed. By level 4 every control channel
+in the game is switched off inside that circle and your keep is reduced to raw
+damage. The reduction at level 8 is deliberately bounded — it can never reach
+an effective zero, and it never inverts a counter law.
+
+**It grants all of that and holds none of it.** The Unbound is the most
+control-vulnerable body in the roster — **1.60× displacement, 1.50× chill,
+1.40× stagger, 1.30× tar** — and takes 1.25× from both slash and pierce. It
+also has **no sprint**: it is slow in every direction, fleeing included. If it
+wanders into your guns it dies, and that is the intended trade.
+
+Its protection is position, not evasion. It walks at the back of its wave, and
+reaching it means going there.
+
 ### Shieldbearer — 150 HP, 2.8 m/s, 12 damage, 28 mana
 
 **Frontal pierce deals zero.** Not reduced — zero, at any tower level. Takes
@@ -113,6 +153,10 @@ Any class can divert to an exposed defense, but only Sappers, orcs and the
 Colossus meaningfully destroy one. If a Ballista is dying, look for those three
 before blaming the swarm.
 
+The Unbound is absent from this table and the two below it because it never
+attacks anything. It cannot damage a defense, and no defense is ever occupied
+holding it off.
+
 ## How far each one looks
 
 Perception is the radius within which an enemy notices an exposed defense;
@@ -153,6 +197,7 @@ orcs, shieldbearers, sappers and the Colossus commit **two**.
 | Frostbound | **Fire** — never chill |
 | Fire Demons | **Chill**, then any valid damage — never Cannon |
 | Bombardiers | Pierce, and interrupt |
+| **Unbound** | **Reach it early** — displacement and chill land hardest on it |
 | Colossus | Crush, and everything else you own |
 
 ## See also
