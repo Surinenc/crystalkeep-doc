@@ -116,7 +116,7 @@ generator's.
 |---|---|
 | F1 | Every gate has a walkable path that arrives **within 3 m** of the crystal |
 | F2 | The fastest enemy needs **at least 8 s** from any gate to the crystal |
-| F3 | The slowest enemy arrives **within 45 s** |
+| F3 | The slowest enemy arrives **within 50 s** |
 | F4 | Lane times differ by **at most 5 s** — fronts arrive together |
 | F5 | Every lane narrows to **at most 8.5 m** somewhere |
 | F6 | No choke is narrower than **2.6 m** — an orc plus margin |
@@ -133,6 +133,13 @@ F7 is the one worth internalising: sealing every lane is always affordable, so
 turtling stays a real option rather than a fantasy. (The four-door ceiling is a
 separate, deliberate cap in the generator — `DOORS_MAX := 4` — not something F7
 produces on its own.)
+
+**F2 and F3 measure the classes that actually apply pressure.** Two are exempt:
+the Colossus and the Unbound. Both are slower than any troop, and neither
+threatens anything by arriving late — the Colossus is a milestone that advances
+on its own schedule, and the Unbound deals no damage at all. Letting either set
+the bound would have stretched every lane's measured time without a single
+enemy becoming more dangerous.
 
 Version 6 changed how the rules are measured, not the numbers. Route times are
 taken over the finished navigation graph, **drops included**, so a one-way
