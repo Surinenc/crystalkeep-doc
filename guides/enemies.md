@@ -81,7 +81,7 @@ the same reason: it must not be able to cover two chokes at once.
 
 **Its level rises on its own clock.** Every **6 seconds** it pulses and gains a
 stack, whether or not anything is in range and whether or not you are near it.
-Its age is the threat, so a caster you ignored for a minute is not the caster
+Its age is the threat, so an Unbound you ignored for a minute is not the one
 that walked in. Each level keeps every level beneath it:
 
 | Level | What nearby enemies gain |

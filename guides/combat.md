@@ -33,8 +33,8 @@ Control is not damage. A chilled Fire Demon is still a Fire Demon; something
 else has to kill it. What control buys is time, and time is what lets a slower,
 better-aimed answer arrive.
 
-**All four can be switched off while an Unbound lives.** That caster's stacks
-remove them one at a time — stagger, then tar, then displacement, then chill —
+**All four can be switched off while an Unbound lives.** Its stacks remove them
+one at a time — stagger, then tar, then displacement, then chill —
 for every enemy within 6 m of it. It is the only thing in the game that takes a
 channel away from you mid-wave. See [Enemies](enemies.md#unbound--270-hp-145-ms-0-damage-60-mana).
 
@@ -62,7 +62,7 @@ that during a wave, the answer is not more of the same defense.
 immunities are granted rather than born, they stack one channel at a time as it
 ages, and they end the moment it dies. A zero you cannot fix by rebuilding is
 the roster; a zero that appeared this wave and can be undone by reaching one
-body is that caster. They read identically on screen, so check whether anything
+body is an Unbound. They read identically on screen, so check whether anything
 is tethered before you conclude a channel was the wrong choice.
 
 **Frontal pierce is about facing, not position.** A Ballista behind a
@@ -122,8 +122,8 @@ gets nothing.
 covers *every* enemy inside it, whatever packet they arrived with — the only
 aura in the game that ignores squad lines. It does not stack with another
 Unbound, which take nothing from each other, and the game draws a tether from
-the caster to each body it is holding. Those threads are the read: follow them
-back and you have found what to kill.
+it to each body it is holding. Those threads are the read: follow them back and
+you have found what to kill.
 
 ## The enemy roster
 

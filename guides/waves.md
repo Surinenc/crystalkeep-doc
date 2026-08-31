@@ -35,12 +35,12 @@ never arrive together on different lanes.
 
 It arrives early on purpose. At 1.45 m/s it is the slowest thing in the game,
 so **everything spawned after it overtakes it** — and being overtaken is the
-mechanic, because the bodies passing it are the ones it stamps. A caster that
+mechanic, because the bodies passing it are the ones it stamps. An Unbound that
 came in late would trail a wave it could never catch and buff nothing, so the
 game would rather a lane went without one.
 
 It is announced like any other beat, and the telegraph is unusually literal:
-`UNBOUND — KILL THE CASTER`, countered by `CONTROL DIES WHILE IT LIVES`. Every
+`UNBOUND — KILL THE UNBOUND`, countered by `CONTROL DIES WHILE IT LIVES`. Every
 second it survives raises what its escort costs you. See
 [Enemies](enemies.md#unbound--270-hp-145-ms-0-damage-60-mana).
 
