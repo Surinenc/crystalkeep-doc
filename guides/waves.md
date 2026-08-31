@@ -30,15 +30,28 @@ take 0.55× from both slash and pierce. Wave 4 adds the two specialists that
 punish a static plan: sappers go for your defenses, bombardiers hit for 30.
 
 **Wave 4 is also where the Unbound arrives**, and it changes what the last two
-waves are asking. One walks in per lane — never two within 13 seconds of each
-other — entering about a quarter of the way through that lane's arrivals, so it
-comes in with company rather than alone. A lane needs at least four spawns to
-be given one.
+waves are asking. At most one walks in per lane, and where it walks in is
+placed by law rather than authored:
+
+- **Third in its lane.** Not first — a single floor trap would kill it before
+  anything had gone ahead to spring that trap.
+- **Never within 13 s of another Unbound**, so two of them can never split you
+  in two directions at once.
+- **Never past 80% of its lane.** If pushing it back for that 13 s would land
+  it in the last fifth, the lane is simply **not given one**.
+- A lane needs at least **four spawns** to be given one at all.
+
+Those rules all serve one fact: at 1.45 m/s it is the slowest thing in the
+game, so **everything spawned after it overtakes it**. Being overtaken is the
+mechanic — the bodies passing it are the ones it stamps. An Unbound that
+arrives late walks alone behind a wave it can never catch, buffs nothing, and
+is free tower food, which is why the game would rather skip it than place it
+badly.
 
 It is announced like any other beat, and the telegraph is unusually literal:
 `UNBOUND — KILL THE CASTER`, countered by `CONTROL DIES WHILE IT LIVES`. Every
 second it survives raises what its escort costs you. See
-[Enemies](enemies.md#unbound--90-hp-145-ms-0-damage-60-mana).
+[Enemies](enemies.md#unbound--270-hp-145-ms-0-damage-60-mana).
 
 ## Waves arrive as squads, not as a crowd
 
@@ -64,12 +77,19 @@ A two-door keep gives you a second beat to react in; a four-door keep spends
 that time up front and asks whether every lane can hold unattended.
 
 **One thing does scale with gates.** The Unbound is dealt one per lane from
-wave 4, so a four-door keep carries four of them and a two-door keep two. That
+wave 4, so a four-door keep can carry four of them and a two-door keep two. That
 is a deliberate exception: it deals no damage, so it adds no direct pressure,
 and the extra difficulty is entirely in what it protects.
 
-Within a packet, members spawn **0.2 s apart**. Packets sharing a gate are at
-least **2.2 s apart**.
+Within a packet, members spawn **0.2 s apart**. Packets sharing a gate are
+**3 to 9 s apart** — never less, because a clump needs time to clear the gate,
+and never more, because a longer gap is dead air with nothing on screen. The
+spacing is derived from the wave and the gate rather than rolled, so the same
+wave on the same keep always breathes the same way.
+
+A lane stops stretching once it has spent **55 s** spawning. Past that its
+remaining clumps fall back to the minimum gap, so a run of long gaps at depth
+cannot walk the wave into the crystal purge.
 
 ### Shield columns march together; everything else strings out
 
@@ -121,11 +141,12 @@ distance — they take 1.25× from slash and resist pierce.
 be interrupted, and interrupting one pays **+5 Ward**.
 
 **The Unbound** arrives from wave 4 and never touches you — no weapon, no
-damage, 90 HP, walking at 1.45 m/s. What it does is switch your control
+damage, 270 HP, walking at 1.45 m/s. What it does is switch your control
 channels off one at a time for everything within 6 m of it, and it gets
-stronger simply by staying alive. It is fragile and cannot run, so the only
-question it asks is whether you can reach the back of a wave while the front of
-it is still arriving.
+stronger simply by staying alive. It cannot run and it takes 1.25× from slash
+and pierce, but it has the health to survive a trap line, so the question it
+asks is whether you can reach the back of a wave while the front of it is still
+arriving.
 
 **The Colossus** arrives on wave 5 with 1700 HP and 72 damage. It cannot be
 displaced at all, resists most control, and takes 1.35× from crush. It is the
