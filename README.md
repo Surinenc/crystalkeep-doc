@@ -22,7 +22,7 @@ Ward pool. The keep does the killing. You decide where it kills hardest.
 
 - [The Warden](guides/warden.md) — health, Ward, the dash, and the three spells
 - [Combat](guides/combat.md) — four damage channels, four control channels, and the hard-zero laws
-- [Enemies](guides/enemies.md) — all ten roles, what each one fears and refuses
+- [Enemies](guides/enemies.md) — all eleven roles, what each one fears and refuses
 - [Defenses](guides/defenses.md) — ten defenses across three schools, with costs and mounting rules
 - [Waves](guides/waves.md) — the five waves and the counters they announce
 - [Siege Doctrines](guides/doctrines.md) — the two run-long choices offered after waves 2 and 4
