@@ -33,6 +33,11 @@ Control is not damage. A chilled Fire Demon is still a Fire Demon; something
 else has to kill it. What control buys is time, and time is what lets a slower,
 better-aimed answer arrive.
 
+**All four can be switched off while an Unbound lives.** That caster's stacks
+remove them one at a time — stagger, then tar, then displacement, then chill —
+for every enemy within 6 m of it. It is the only thing in the game that takes a
+channel away from you mid-wave. See [Enemies](enemies.md#unbound--90-hp-145-ms-0-damage-60-mana).
+
 ## Hard-zero laws
 
 Some matchups deal **exactly zero**. Not reduced — zero. No item level, no
@@ -52,6 +57,13 @@ reason a build of one defense loses.
 When a hard-zero happens the game tells you plainly: the hit reads
 `CANNON IMMUNE — 0` in the enemy's own colour, with its own sound. If you see
 that during a wave, the answer is not more of the same defense.
+
+**Every law above is innate. The Unbound makes new ones.** Its control
+immunities are granted rather than born, they stack one channel at a time as it
+ages, and they end the moment it dies. A zero you cannot fix by rebuilding is
+the roster; a zero that appeared this wave and can be undone by reaching one
+body is that caster. They read identically on screen, so check whether anything
+is tethered before you conclude a channel was the wrong choice.
 
 **Frontal pierce is about facing, not position.** A Ballista behind a
 Shieldbearer works perfectly well. The shield only covers the front. Flank it,
@@ -106,6 +118,13 @@ not just for itself.
 The auras are squad-scoped: an enemy from a different packet standing nearby
 gets nothing.
 
+**The Unbound is the exception, and it is why it is dangerous.** Its 6 m circle
+covers *every* enemy inside it, whatever packet they arrived with — the only
+aura in the game that ignores squad lines. It does not stack with another
+Unbound, which take nothing from each other, and the game draws a tether from
+the caster to each body it is holding. Those threads are the read: follow them
+back and you have found what to kill.
+
 ## The enemy roster
 
 Speed is metres per second. Bounty is the mana you are paid for the kill.
@@ -118,6 +137,7 @@ Speed is metres per second. Bounty is the mana you are paid for the kill.
 | Frostbound | 65 | 4.8 | 8 | 20 | **fire** | chill (immune) |
 | Fire Demon | 72 | 4.5 | 9 | 22 | chill, crush | **fire (immune)** |
 | Sapper | 80 | 3.8 | 10 | 25 | pierce, slash | crush |
+| Unbound | 90 | 1.45 | **0** | 60 | displace, chill, slash, pierce | — |
 | Shieldbearer | 150 | 2.8 | 12 | 28 | crush, flanking | frontal pierce |
 | Bombardier | 210 | 2.0 | 30 | 45 | pierce | slash, displace |
 | Orc | 280 | 2.2 | 22 | 45 | **crush**, fire | slash, pierce, stagger |
