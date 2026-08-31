@@ -36,7 +36,7 @@ better-aimed answer arrive.
 **All four can be switched off while an Unbound lives.** That caster's stacks
 remove them one at a time — stagger, then tar, then displacement, then chill —
 for every enemy within 6 m of it. It is the only thing in the game that takes a
-channel away from you mid-wave. See [Enemies](enemies.md#unbound--90-hp-145-ms-0-damage-60-mana).
+channel away from you mid-wave. See [Enemies](enemies.md#unbound--270-hp-145-ms-0-damage-60-mana).
 
 ## Hard-zero laws
 
@@ -137,7 +137,7 @@ Speed is metres per second. Bounty is the mana you are paid for the kill.
 | Frostbound | 65 | 4.8 | 8 | 20 | **fire** | chill (immune) |
 | Fire Demon | 72 | 4.5 | 9 | 22 | chill, crush | **fire (immune)** |
 | Sapper | 80 | 3.8 | 10 | 25 | pierce, slash | crush |
-| Unbound | 90 | 1.45 | **0** | 60 | displace, chill, slash, pierce | — |
+| Unbound | 270 | 1.45 | **0** | 60 | displace, chill, slash, pierce | — |
 | Shieldbearer | 150 | 2.8 | 12 | 28 | crush, flanking | frontal pierce |
 | Bombardier | 210 | 2.0 | 30 | 45 | pierce | slash, displace |
 | Orc | 280 | 2.2 | 22 | 45 | **crush**, fire | slash, pierce, stagger |

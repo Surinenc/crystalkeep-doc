@@ -64,11 +64,17 @@ Warden, a Ballista, or a Wall Maul.
 pierce and 1.20× from slash, resists crush (0.80×). Left alone it will
 dismantle the lane you paid for. Intercept it.
 
-### Unbound — 90 HP, 1.45 m/s, 0 damage, 60 mana
+### Unbound — 270 HP, 1.45 m/s, 0 damage, 60 mana
 
 It never attacks. It carries no weapon and deals nothing to you, your defenses
 or the crystal, and it walks at a Colossus's pace. It is still the most
 dangerous body in the wave, because of what everything standing near it gains.
+
+**It is not fragile, and that is recent.** It carries 270 HP — three times a
+Sapper's — because at a third of that it died to scenery: a Masterwork Ballista
+removed it in one bolt and two spike ticks finished it, which meant the enemy
+built to force a reaction mostly never forced one. It is the only enemy that
+cannot fight back against a trap, so the trap needed to stop being the answer.
 
 Its aura reaches **6 m** — the same radius as your own Commander aura, and for
 the same reason: it must not be able to cover two chokes at once.
