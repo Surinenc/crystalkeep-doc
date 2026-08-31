@@ -22,12 +22,23 @@ ground the generator handed you.
 | 1 | Goblins | Can you hold a lane at all? |
 | 2 | Goblins, runners | Can you catch something fast? |
 | 3 | Goblins, runners, orcs, crossbowmen | Do you have crush, and can you break line of sight? |
-| 4 | Goblins, orcs, shieldbearers, sappers, crossbowmen, bombardiers | Can you flank, intercept, and protect what you built? |
-| 5 | All ten roles, including a Colossus | All of it, at once |
+| 4 | Goblins, orcs, shieldbearers, sappers, crossbowmen, bombardiers, **Unbound** | Can you flank, intercept, and protect what you built? |
+| 5 | All eleven roles, including a Colossus | All of it, at once |
 
 Wave 3 is where crush becomes mandatory — it is the first wave with orcs, who
 take 0.55× from both slash and pierce. Wave 4 adds the two specialists that
 punish a static plan: sappers go for your defenses, bombardiers hit for 30.
+
+**Wave 4 is also where the Unbound arrives**, and it changes what the last two
+waves are asking. One walks in per lane — never two within 13 seconds of each
+other — entering about a quarter of the way through that lane's arrivals, so it
+comes in with company rather than alone. A lane needs at least four spawns to
+be given one.
+
+It is announced like any other beat, and the telegraph is unusually literal:
+`UNBOUND — KILL THE CASTER`, countered by `CONTROL DIES WHILE IT LIVES`. Every
+second it survives raises what its escort costs you. See
+[Enemies](enemies.md#unbound--90-hp-145-ms-0-damage-60-mana).
 
 ## Waves arrive as squads, not as a crowd
 
@@ -84,6 +95,7 @@ CROSSBOW LINE FORMING     →  BREAK LOS / CLOSE
 SAPPERS UNDER SHIELDS     →  INTERCEPT / CRUSH
 BOMBARDIER ENTERING       →  SPREAD / INTERRUPT
 FROSTBOUND FRONT          →  FIRE / TAR
+UNBOUND                   →  CONTROL DIES WHILE IT LIVES
 SIEGEBREAKER COLOSSUS     →  CRUSH ARMOR / FLANK SEAL
 ```
 
@@ -102,6 +114,13 @@ distance — they take 1.25× from slash and resist pierce.
 
 **Bombardiers** are slow (2.0 m/s) and heavy (210 HP) and hit for 30. They can
 be interrupted, and interrupting one pays **+5 Ward**.
+
+**The Unbound** arrives from wave 4 and never touches you — no weapon, no
+damage, 90 HP, walking at 1.45 m/s. What it does is switch your control
+channels off one at a time for everything within 6 m of it, and it gets
+stronger simply by staying alive. It is fragile and cannot run, so the only
+question it asks is whether you can reach the back of a wave while the front of
+it is still arriving.
 
 **The Colossus** arrives on wave 5 with 1700 HP and 72 damage. It cannot be
 displaced at all, resists most control, and takes 1.35× from crush. It is the
