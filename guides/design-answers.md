@@ -27,7 +27,7 @@ you meet:
 | | |
 |---|---|
 | Fastest enemy needs **at least 8 s** from any gate to the crystal | You always get time to react |
-| Slowest arrives **within 45 s** | No lane is a marathon that never threatens |
+| Slowest arrives **within 50 s** | No lane is a marathon that never threatens |
 | Lane times differ by **at most 5 s** | Fronts arrive together; splitting attention is possible |
 | Every lane narrows to **at most 8.5 m** somewhere | Every lane can be answered with position |
 | No choke narrower than **2.6 m** | Nothing wedges; the geometry cannot trap a wave |
