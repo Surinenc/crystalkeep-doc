@@ -58,12 +58,18 @@ like any other ground. Twenty of the twenty-eight pre-solved keeps have one.
 Read the lip, not the landing: a drop is a route that does not show as a
 corridor.
 
-**Door count is a timing statement, not a volume one.** A wave is always four
-packets, dealt round-robin across the gates — so a two-door keep sends two
-packets per gate in sequence, while a four-door keep sends all four at once,
-one per gate. The same enemies arrive either way. What changes is whether you
-get a second beat to react in. Read a four-door keep as *less time*, not *more
-enemies*. See [Waves](waves.md#waves-arrive-as-squads-not-as-a-crowd).
+**Door count is mostly a timing statement.** A wave is always four packets,
+dealt round-robin across the gates — so a two-door keep sends two packets per
+gate in sequence, while a four-door keep sends all four at once, one per gate.
+The same troops arrive either way. What changes is whether you get a second
+beat to react in, so read a four-door keep first as *less time*.
+
+**The exception is the Unbound.** From wave 4 one walks in per lane, which
+means a four-door keep receives four casters where a two-door keep receives
+two. Two keeps at the same wave and the same Nightmare tier are therefore no
+longer the same fight — gate count now buys the enemy something, and it is the
+one thing on the board that gets worse the longer you leave it.
+See [Waves](waves.md#waves-arrive-as-squads-not-as-a-crowd).
 
 ## The seven archetypes
 

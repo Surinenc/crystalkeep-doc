@@ -58,10 +58,15 @@ not change with the number of gates. This is worth understanding properly:
 | 2 | Two per gate, in sequence — a second wave-front behind the first |
 | 4 | One per gate, **all starting at the same moment** |
 
-So a four-door keep does not send more enemies. It sends the **same** enemies,
+So a four-door keep does not send more troops. It sends the **same** troops,
 across more fronts, with **less time between the first contact and the last**.
 A two-door keep gives you a second beat to react in; a four-door keep spends
 that time up front and asks whether every lane can hold unattended.
+
+**One thing does scale with gates.** The Unbound is dealt one per lane from
+wave 4, so a four-door keep carries four of them and a two-door keep two. That
+is a deliberate exception: it deals no damage, so it adds no direct pressure,
+and the extra difficulty is entirely in what it protects.
 
 Within a packet, members spawn **0.2 s apart**. Packets sharing a gate are at
 least **2.2 s apart**.
