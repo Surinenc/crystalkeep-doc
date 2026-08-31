@@ -15,6 +15,8 @@ damage do.
 | **Goblin** | **Runner** | **Orc** | **Shieldbearer** | **Sapper** |
 | <img src="../assets/enemies/frostbound.png" width="110" alt="Frostbound"> | <img src="../assets/enemies/emberbound.png" width="110" alt="Fire Demon"> | <img src="../assets/enemies/crossbowman.png" width="110" alt="Crossbowman"> | <img src="../assets/enemies/bombardier.png" width="110" alt="Bombardier"> | <img src="../assets/enemies/colossus.png" width="110" alt="Colossus"> |
 | **Frostbound** | **Fire Demon** | **Crossbowman** | **Bombardier** | **Colossus** |
+| <img src="../assets/enemies/unbound.png" width="110" alt="Unbound"> | | | | |
+| **Unbound** | | | | |
 
 The Frostbound and the Fire Demon are the same mesh in two colours. That is
 not an accident of the art — it is what the game does, and it matters.
