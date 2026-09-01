@@ -22,12 +22,18 @@ ground the generator handed you.
 | 1 | Goblins | Can you hold a lane at all? |
 | 2 | Goblins, runners | Can you catch something fast? |
 | 3 | Goblins, runners, orcs, crossbowmen | Do you have crush, and can you break line of sight? |
-| 4 | Goblins, orcs, shieldbearers, sappers, crossbowmen, bombardiers, **Unbound** | Can you flank, intercept, and protect what you built? |
+| 4 | Shieldbearers, sappers, goblins, crossbowmen, bombardiers, **Unbound** | Can you flank, intercept, and protect what you built? |
 | 5 | All eleven roles, including a Colossus | All of it, at once |
 
 Wave 3 is where crush becomes mandatory — it is the first wave with orcs, who
-take 0.55× from both slash and pierce. Wave 4 adds the two specialists that
-punish a static plan: sappers go for your defenses, bombardiers hit for 30.
+take 0.55× from both slash and pierce.
+
+**Wave 4 is built as a demolition wedge.** Its two heavy lanes are nothing but
+shields and Sappers — two of each on the first, three of each on the second —
+and every shield spawns ahead of every Sapper, so what arrives is a front rank
+of cover with a rear rank of demolition behind it. The orcs are gone; this wave
+is not asking whether you own crush, it is asking whether you can get past a
+wall of pierce immunity to reach what is dismantling your keep.
 
 **Wave 4 is also where the Unbound arrives**, and it changes what the last two
 waves are asking. At most one walks in per lane, near the front of it, and two
@@ -80,9 +86,23 @@ always breathes the same way.
 ### Shield columns march together; everything else strings out
 
 **A packet containing a Shieldbearer moves at a shared 2.8 m/s** — the
-Shieldbearer's own speed. The whole column is speed-locked to its leader, which
-is exactly why the pierce-immunity aura is so punishing: the squad stays inside
-the shield's cover for the entire approach instead of outrunning it.
+Shieldbearer's own speed. The column holds that pace while the shield is doing
+its job, which is exactly why the pierce-immunity aura is so punishing: the
+squad stays inside the cover for the approach instead of outrunning it.
+
+**A Sapper only waits while the shield is actually protecting it**, and breaks
+to its own 3.8 m/s the moment it is not:
+
+| It matches the shield when | It runs at full speed when |
+|---|---|
+| The shield is ahead of it, within **6 m**, and the threat is pierce the shield covers | The shield falls behind or drops out of cover — it sprints to catch up |
+| | It closes to **4.25 m** of what it came to demolish |
+| | The threat is not pierce, so the shield answers nothing |
+| | Its squad has no living Shieldbearer at all |
+
+So the escort is a condition, not a leash. Kill the Shieldbearer and the
+Sappers behind it do not slow down in mourning — they speed up. Break the
+formation for the pierce immunity, not to strand the demolition.
 
 **Every other packet keeps individual speeds.** Runners leak ahead of their
 own squad on purpose, arriving alone and early while the goblins behind them
