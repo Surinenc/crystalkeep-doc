@@ -61,7 +61,29 @@ derived from the week itself. Keep Assault and Endless draw from a set of
 twenty-eight keeps solved ahead of time; the Weekly builds one on the spot, so
 it is the only mode whose ground is not in that set at all — a keep that exists
 for one week and is then gone. Everyone plays the same keep at the same power,
-and your best local score is kept for the week.
+and your best run of the week is the one that stands — a week's record is only
+overwritten by a higher score.
+
+### What the Weekly score weighs
+
+The score is a **ladder, not a sum**. Each term's maximum is larger than
+everything beneath it added together, so a lower factor can only separate two
+runs that already tied on every factor above it:
+
+| Rank | Term | Rewards |
+|---:|---|---|
+| 1 | **Waves** | How far you got. Nothing below can outweigh one more wave |
+| 2 | **Integrity** | Crystal health kept |
+| 3 | **Speed** | Pace |
+| 4= | **Economy** | Mana left unspent — synergy over brute force |
+| 4= | **Damage** | Damage dealt |
+
+Progress therefore always wins. Dying on wave 4 with a wrecked crystal beats
+dying on wave 2 with an untouched one, and the two smallest terms trade against
+each other rather than picking a build for you.
+
+The board ranks by that number and never displays it. See
+[Boards](boards.md#the-weekly-and-the-streak).
 
 **Weekly forces Nightmare to 0** regardless of the tier you have unlocked. Both
 your gear and the difficulty are pinned, because a Weekly is one shared
