@@ -104,6 +104,13 @@ So the escort is a condition, not a leash. Kill the Shieldbearer and the
 Sappers behind it do not slow down in mourning — they speed up. Break the
 formation for the pierce immunity, not to strand the demolition.
 
+**A shield-and-Sapper packet also picks its target together.** Once one member
+has legitimately acquired a defense, the rest of the packet can commit to that
+same defense and stay committed within **20 m** while the slower shield closes
+on it. Each still walks its own reachable path — nothing teleports — but what
+arrives is a wedge converging on one of your buildings rather than four enemies
+choosing separately.
+
 **Every other packet keeps individual speeds.** Runners leak ahead of their
 own squad on purpose, arriving alone and early while the goblins behind them
 are still walking. That leak is deliberate design, not a spacing accident — it
