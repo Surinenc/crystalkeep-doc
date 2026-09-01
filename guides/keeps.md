@@ -18,7 +18,7 @@ launch. The Weekly pays it once, for one keep, and in exchange it reaches the
 **generator's full range** rather than a fixed shortlist.
 
 `--seed N` also solves live, and every pre-solved keep records the seed it came
-from, so any of them can be regenerated exactly.
+from.
 
 ## What a keep is made of
 
@@ -265,9 +265,19 @@ meet is the generated Split Bastion described above, not this fixture.
 
 ## Seeds
 
-Every generated keep comes from a seed, and the same seed always produces the
-same keep. `--seed N` solves one live. The seed is printed with the level line,
-so any run can be reproduced exactly.
+Every generated keep comes from a seed, and the same seed produces the same
+keep **on the same generator**. `--seed N` solves one live, and the seed is
+printed with the level line, so a run can be handed to someone else and played
+back exactly — as long as you are both on the same build.
+
+**A seed is not a permanent address.** When the generator changes, an old seed
+may resolve to a different keep than it once did. Of the twenty-eight
+pre-solved keeps, twenty-one still regenerate into what they shipped as and
+**seven no longer do** — one of them ships with four rooms and three doors
+where its own seed now produces five and four. Those seven are not broken keeps
+to be replaced: they passed the contract when they were baked, they still pass
+it now, and what they are is fixed in the file rather than recomputed. Only the
+route back from the seed has moved.
 
 ## See also
 
