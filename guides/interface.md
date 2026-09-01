@@ -75,9 +75,12 @@ lose.
 The ledger is also where you set your **loot preference**, which biases what
 your items roll. See [Progression](progression.md#loot-is-claimed-never-collected).
 
-`Options → Accessibility → Item details` switches between Concise and Full.
-Concise is the default decision surface; Full adds rolls and provenance for
-when you want the arithmetic.
+**There is one item card, and nothing is hidden on it.**
+`Options → Accessibility → Item details` chooses between **Concise** and
+**Full**, and it governs exactly one thing: whether each rating carries a line
+beneath it giving its roll range, how well it rolled, and what it does. Every
+other part of the card is identical either way, so the setting buys you the
+arithmetic without ever holding a decision back.
 
 ## The Workshop
 
