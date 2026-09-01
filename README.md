@@ -39,6 +39,7 @@ Ward pool. The keep does the killing. You decide where it kills hardest.
 - [Workshop](guides/workshop.md) — materials, modification, sealing, and salvage
 - [Game Modes](guides/game-modes.md) — Keep Assault, Endless Siege, Weekly Keep, and Siege Contracts
 - [Co-op](guides/co-op.md) — the two-Warden Twin Siege: room codes, two purses, and auras that compose
+- [Boards](guides/boards.md) — five leaderboards, a name you never type, and the Weekly streak
 
 ## Why it works this way
 

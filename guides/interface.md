@@ -90,6 +90,11 @@ arithmetic without ever holding a decision back.
 
 **M**. See [Game modes](game-modes.md).
 
+## The boards
+
+**LEADERBOARD** on the main menu. Five boards, a GLOBAL / ME toggle on all but
+the last, and no account to make — see [Boards](boards.md).
+
 ## The wave debrief
 
 After each wave, per-defense evidence: damage, kills, control, blocked hits,
@@ -100,7 +105,8 @@ placement earned its cost.
 
 ## Options
 
-Audio, controls, accessibility and video. Two worth knowing:
+Six tabs: audio, controls, accessibility, video, language, and **About**, which
+is where the credits live. Two settings worth knowing:
 
 - **Streamer-safe audio** mutes the licensed soundtrack while leaving ambience
   and effects alone.
