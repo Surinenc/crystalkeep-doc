@@ -69,6 +69,13 @@ is tethered before you conclude a channel was the wrong choice.
 Shieldbearer works perfectly well. The shield only covers the front. Flank it,
 or use a channel the shield does not stop.
 
+**A zero stops the shot dead.** A Ballista bolt that resolves to nothing —
+against a shield's front, or against a squadmate the shield is covering — does
+not carry on to whatever stood behind it. It cannot pierce through and it
+cannot fork. Upgrades buy a bolt more targets, never permission to tunnel
+through an immunity: tier mechanics answer to the counter matrix, not the other
+way round.
+
 ### The shield in full
 
 Only the Shieldbearer has a facing rule, and it is a **120° frontal cone**

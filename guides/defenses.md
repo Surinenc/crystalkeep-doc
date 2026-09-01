@@ -229,6 +229,13 @@ This is the real argument for a third tier, and it is why the answer changes by
 defense. A Masterwork Frost Rune gains a mechanic that did not exist before; a
 Masterwork Blockade is just a tougher wall.
 
+**Neither of the Ballista's bonuses survives a zero.** A bolt that deals
+nothing — into a Shieldbearer's front, or into a squadmate under its cover —
+stops there. It does not pierce onward and it does not fork. Tiers buy a bolt
+more targets, never a way through an immunity, so a Masterwork Ballista pointed
+at a shield wall is still a Ballista pointed at a shield wall. See
+[Combat](combat.md#hard-zero-laws).
+
 **Masterwork also changes what Mending Ward does to it.** Mend primes any
 defense, cutting its cooldown — but on a Masterwork defense it removes the
 cooldown entirely and the defense fires at once. That turns your heal into an
