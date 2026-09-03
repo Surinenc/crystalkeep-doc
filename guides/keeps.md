@@ -49,6 +49,14 @@ The crystal sits at the centre — or, on a Split Bastion, two crystals sit
 **72 m** apart on either side of it — and the sanctuary around each is
 protected ground you cannot build on.
 
+**On some Underkeep seeds the crystal is upstairs.** Instead of standing on the
+base band it sits on a first-floor plaza, reached by ramps cut down every side,
+and that raised court replaces the ring the keep would otherwise have at ground
+level — the routes fight their way across an overpass rather than around a
+circle. The seed decides; other Underkeeps keep their crystal on the ground,
+and no other archetype does this yet. The crystal is always standing on a real
+storey, never floating above one.
+
 **The ground is stacked.** A keep rises in bands, each a full storey of
 **4 m**, joined by ramps. Where a band edge is open the generator may cut a
 **drop**: a gap in the wall line where enemies step off the upper band onto the
@@ -81,20 +89,24 @@ carry.
 
 | Archetype | The problem it sets | Landmarks it can draw |
 |---|---|---|
-| **Foundry Channels** | Parallel channels split and reconverge — cover moving fronts, not one splash choke | Oil Channel, Foundry Crucible Pool, Wind Vent, Powder Magazine |
+| **Foundry Channels** | Parallel channels split and reconverge — cover moving fronts, not one splash choke | Oil Channel, Foundry Crucible Pool, Wind Vent, Powder Magazine, Collapsing Aqueduct |
 | **Broken Causeway** | Exposed spans can change route — keep alternate coverage ready between waves | Counterweight Bridge, Collapsing Aqueduct, Chain Anchor, Sealed Breach Gate |
 | **Split Bastion** | Two crystals anchor two districts — hold one side with what you built, be at the other | Iron Portcullis, Watch Gallery, Stoneward Shrine, Sealed Breach Gate |
 | **Sunken Court** | A low basin and an upper rim compete for control — preserve a safe vertical rotation | Floodgate Cistern, Rime Basin, Execution Pit, Collapsing Aqueduct |
-| **High Gallery** | Overlooks grant range but hide the lower approaches — defend both elevation bands | Siege Lift, Fallen Bell Tower, Watch Gallery, Signal Brazier |
-| **Ringwall** | Several spokes feed one oath court — rotate and overlap rather than overcommit | Oath Plaza, War Horn Rostrum, Rune Pylon, Iron Portcullis |
-| **The Underkeep** | Three tiers of ground — surrendering a band is a decision, not a defeat | Descent Gate, Echo Well, Root Bridge, Buried Shrine |
+| **High Gallery** | Overlooks grant range but hide the lower approaches — defend both elevation bands | Siege Lift, Fallen Bell Tower, Watch Gallery, Signal Brazier, Counterweight Bridge |
+| **Ringwall** | Several spokes feed one oath court — rotate and overlap rather than overcommit | Oath Plaza, War Horn Rostrum, Rune Pylon, Iron Portcullis, Sealed Breach Gate |
+| **The Underkeep** | Three tiers of ground — surrendering a band is a decision, not a defeat | Descent Gate, Echo Well, Root Bridge, Buried Shrine, Counterweight Bridge |
 
-**Only three archetypes can change their own routes mid-run.** Broken Causeway
-is built for it — three of its four landmarks are route-changers — while Sunken
-Court and Split Bastion carry one each. On **Foundry Channels, High Gallery,
-Ringwall and the Underkeep the routes you read in the first build phase are the
-routes for the whole siege**, so a placement there is a commitment you will not
-be asked to revisit.
+**Every keep can change its own routes.** There is no archetype that holds
+still any more: each of the seven carries at least one route-changing landmark,
+and the keep's major landmark slot is filled by a changer whenever its pool
+holds one. Assume the ground you read in the first build phase is temporary.
+
+**The change is proved to matter before the keep ships.** A route-changer is
+only placed where blocking it would lengthen a gate's path by a whole macro
+cell, or strand at least two of its cells — while every gate stays reachable
+both before and after. A shift that moved nothing would be theatre, so the
+generator refuses to build one.
 
 **The Split Bastion is the two-crystal keep.** Its crystals stand 72 m apart,
 west and east or north and south by seed, and losing either one ends the run.
@@ -104,8 +116,8 @@ gates nearest that crystal**, so pressure arrives through the local corridors
 rather than crossing the keep. The briefing is literal: build to hold one side,
 and be at the other.
 
-That is the single most useful thing the archetype name tells you. Read
-*Broken Causeway* and hold mana back; read *Ringwall* and spend it.
+So the archetype no longer tells you whether the ground will move — it tells
+you what shape it will move into. Hold something back on every keep.
 
 All seven appear in the pre-solved set, four keeps each — twenty-eight in all.
 
@@ -213,9 +225,21 @@ where the routes already run.
 | Sealed Breach Gate | Opens on a scheduled wave — a new route appears |
 | Counterweight Bridge | You raise or lower it between waves — press **T** |
 
-Scheduled changes announce themselves before the wave that triggers them —
+Scheduled changes announce themselves **a wave ahead** —
 `COLLAPSING AQUEDUCT COLLAPSES · ROUTES CHANGE`. The wave it fires on is
 derived from the seed, so it is not always the same wave.
+
+**Half of them no longer wait for the wave to end.** A scheduled change either
+fires at the boundary, before its wave begins, or **mid-wave** — partway
+through that wave's arrivals, with enemies already on the ground re-routing as
+it happens. Which of the two you get is fixed by the seed, and both are
+telegraphed the same wave in advance, so you are never surprised that a change
+is coming — only, sometimes, by finding it lands while you are already
+fighting.
+
+Read that as a build instruction. On a mid-wave keep the lane you fortified can
+stop being the lane during the fight it was built for, and the Warden is the
+only defense that can be somewhere else by then.
 
 Interactive landmarks are operated with **T**, and only between waves — they
 spend a charge each time, so a two-charge landmark can be used twice in a run
