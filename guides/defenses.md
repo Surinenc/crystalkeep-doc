@@ -155,6 +155,13 @@ A ghost shows where the defense will land. It refuses for concrete reasons:
   works by carving the navigation mesh that the detour-versus-breach decision
   is read from, and on the 12.5° ramp of a 4 m storey that carve means nothing.
   If a ghost refuses on a slope where a trap was accepted, this is why.
+
+**A defense lands on the floor, and leans with it.** Whatever height you were
+aiming at, the defense is seated on the surface beneath that point rather than
+hovering at the height of your crosshair, and on a slope it tilts to sit flush
+with the ramp instead of standing upright on a hillside. Wall traps keep their
+own mounting angle. Nothing about which surfaces accept which defense changes —
+this is where a defense ends up once the ghost has said yes.
 - **Distance.** You must be within **14 m** of the spot.
 - **Overlap.** The footprint must be clear of world, enemies, other defenses
   and the crystal.
